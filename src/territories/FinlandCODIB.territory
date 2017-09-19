@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>Finland</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>Finland (CO DIB)</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <accountAccessLevel>Edit</accountAccessLevel>
+    <parentTerritory>NordicsREDIB265371</parentTerritory>
+</Territory>

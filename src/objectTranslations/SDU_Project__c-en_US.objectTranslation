@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>SDU Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>SDU Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- CreatedDateTime --></label>
+        <name>CreatedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description Extended --></label>
+        <name>Description_Long__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marktpartij --></label>
+        <name>Marktpartij__c</name>
+        <relationshipLabel><!-- SDU Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SDU Project --></label>
+        <name>SDU_Project__c</name>
+        <relationshipLabel><!-- SDU Projects --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>SDU Project Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

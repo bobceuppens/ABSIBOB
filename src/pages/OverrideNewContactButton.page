@@ -1,0 +1,2 @@
+<apex:page showheader="false" standardController="Contact" extensions="OverrideButtons" action="{!newContactButtonRedirect}">   
+</apex:page>

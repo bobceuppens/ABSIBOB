@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>Read</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>User has multiple ID&apos;s in SAP</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>DiB SR Loesch, Joachim (multiple SAP ID&apos;s)</name>
+    <opportunityAccessLevel>Read</opportunityAccessLevel>
+    <accountAccessLevel>Edit</accountAccessLevel>
+    <parentTerritory>IndirectDIDIBGE</parentTerritory>
+</Territory>

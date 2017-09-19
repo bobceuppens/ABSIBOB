@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Locked --></label>
+        <name>Account_Locked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compiere Id --></label>
+        <name>Compiere_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Contacts --></label>
+        <name>Contacts_Nr__c</name>
+    </fields>
+    <fields>
+        <label><!-- CountryCode --></label>
+        <name>CountryCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- CustomerCode --></label>
+        <name>CustomerCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved by DRM --></label>
+        <name>DRM_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- DRM Approver --></label>
+        <name>DRM_Approver__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id 18 ch --></label>
+        <name>Id_18_ch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Id Clone --></label>
+        <name>Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latin --></label>
+        <name>Latin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Compiere --></label>
+        <name>Link_Compiere_FF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link Compiere --></label>
+        <name>Link_Compiere__c</name>
+    </fields>
+    <fields>
+        <label><!-- MultiPick --></label>
+        <name>MultiPick__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E</masterLabel>
+            <translation><!-- E --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MutliPick FF --></label>
+        <name>MutliPick_FF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Produce Error --></label>
+        <name>Produce_Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Asia</masterLabel>
+            <translation><!-- Asia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP_ID --></label>
+        <name>SAP_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Org Instance --></label>
+        <name>SF_Org_Instance__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Switch --></label>
+        <name>Switch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Reference2 --></label>
+        <name>Territory_Reference2__c</name>
+        <picklistValues>
+            <masterLabel>DEV</masterLabel>
+            <translation><!-- DEV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEV_JAVA</masterLabel>
+            <translation><!-- DEV_JAVA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEV_Salesforce</masterLabel>
+            <translation><!-- DEV_Salesforce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TECH</masterLabel>
+            <translation><!-- TECH --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory Reference --></label>
+        <name>Territory_Reference__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestNumber --></label>
+        <name>TestNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Track --></label>
+        <name>Update_Track__c</name>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CP Get Contacts --></label>
+        <name>computerprofile__CP_Get_Contacts__c</name>
+    </fields>
+    <fields>
+        <label><!-- CP Link Account --></label>
+        <name>computerprofile__CP_Link_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- CP Report --></label>
+        <name>computerprofile__CP_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- CP Update Account --></label>
+        <name>computerprofile__CP_Update_Account__c</name>
+    </fields>
+    <fields>
+        <help><!-- CFP No --></help>
+        <label><!-- CP No --></label>
+        <name>computerprofile__cfp_CFP_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- VAT Number --></help>
+        <label><!-- VAT Number --></label>
+        <name>computerprofile__cfp_VAT_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>soco__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Donated Current Fiscal Year --></label>
+        <name>soco__Amount_Donated_Current_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Donated Last Fiscal Year --></label>
+        <name>soco__Amount_Donated_Last_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Donated Penultimate Fiscal Year --></label>
+        <name>soco__Amount_Donated_Penultimate_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Address Line --></label>
+        <name>soco__Billing_AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>soco__Billing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>soco__Billing_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housenumber --></label>
+        <name>soco__Billing_Housenumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>soco__Billing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>soco__Billing_Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zipcode --></label>
+        <name>soco__Billing_Zipcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branche Code --></label>
+        <name>soco__Branche_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Donor End Date --></label>
+        <name>soco__Donor_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>soco__Email__c</name>
+    </fields>
+    <fields>
+        <help>Cochez cette case si vous souhaitez exclure ce compte du nommage automatique</help>
+        <label><!-- Exclude from Auto Naming --></label>
+        <name>soco__Exclude_from_Auto_Naming__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Donation Date --></label>
+        <name>soco__First_Donation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Donation --></label>
+        <name>soco__Last_Donation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Donations Current Fiscal Year --></label>
+        <name>soco__Number_of_Donations_Current_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Donations Last Fiscal Year --></label>
+        <name>soco__Number_of_Donations_Last_Fiscal_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Donations Penultimate FY --></label>
+        <name>soco__Number_of_Donations_Penultimate_FY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originating Campaign --></label>
+        <name>soco__Originating_Campaign__c</name>
+        <relationshipLabel><!-- Resulting Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary communication channel --></label>
+        <name>soco__Primary_communication_channel__c</name>
+        <picklistValues>
+            <masterLabel>E-mail</masterLabel>
+            <translation><!-- E-mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular mail</masterLabel>
+            <translation>Courrier ordinaire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation>Téléphone</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for status --></label>
+        <name>soco__Reason_for_status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Address Line --></label>
+        <name>soco__Shipping_AddressLine2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>soco__Shipping_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>soco__Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Housenumber --></label>
+        <name>soco__Shipping_Housenumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>soco__Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Suffix --></label>
+        <name>soco__Shipping_Suffix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zipcode --></label>
+        <name>soco__Shipping_Zipcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>soco__Source__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>soco__Status__c</name>
+        <picklistValues>
+            <masterLabel>Address Unknown</masterLabel>
+            <translation>Adresse inconnue</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation>Inactif</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation><!-- Valid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>yp__Active__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Priority --></label>
+        <name>yp__CustomerPriority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Locations --></label>
+        <name>yp__NumberofLocations__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Expiration Date --></label>
+        <name>yp__SLAExpirationDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA Serial Number --></label>
+        <name>yp__SLASerialNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- SLA --></label>
+        <name>yp__SLA__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Upsell Opportunity --></label>
+        <name>yp__UpsellOpportunity__c</name>
+        <picklistValues>
+            <masterLabel>Maybe</masterLabel>
+            <translation><!-- Maybe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label><!-- Cancas --></label>
+            <section>Cancas</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- DRM --></label>
+            <section>DRM</section>
+        </sections>
+        <sections>
+            <label><!-- Debug --></label>
+            <section>Debug</section>
+        </sections>
+        <sections>
+            <label><!-- Fleet Profile --></label>
+            <section>Fleet Profile</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Account Simplified Layout</layout>
+        <sections>
+            <label><!-- Canvas --></label>
+            <section>Canvas</section>
+        </sections>
+        <sections>
+            <label><!-- Canvas Demo --></label>
+            <section>Canvas Demo</section>
+        </sections>
+        <sections>
+            <label><!-- Compiere --></label>
+            <section>Compiere</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Debug --></label>
+            <section>Debug</section>
+        </sections>
+        <sections>
+            <label><!-- iFrame --></label>
+            <section>iFrame</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- B2B --></label>
+        <name>B2B</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- B2C --></label>
+        <name>B2C</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Household --></label>
+        <name>Household</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organization --></label>
+        <name>Organization</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- No Hospitals allowed --></errorMessage>
+        <name>Name_Test_VR</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Postal Code not valid --></errorMessage>
+        <name>Postal_Code</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot update the Name of a locked Account --></errorMessage>
+        <name>Prevent_Update_Name_Locked_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PRIORVALUE = B2B --></errorMessage>
+        <name>Priorvalue_RT_B2B</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- PRIORVALUE = B2C --></errorMessage>
+        <name>Priorvalue_RT_B2C</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Produce error is set to TRUE --></errorMessage>
+        <name>Produce_Error</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- BLND_FormFactoryAccountLink --></label>
+        <name>BLND_FormFactoryAccountLink</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Billing --></label>
+        <name>Billing</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Dynamic_Btn_Test --></label>
+        <name>Dynamic_Btn_Test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Inine_test --></label>
+        <name>Inine_test</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Task --></label>
+        <name>Send_Task</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Switch --></label>
+        <name>Switch</name>
+    </webLinks>
+</CustomObjectTranslation>

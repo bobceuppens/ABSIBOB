@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service Timecard</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service Timecards</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved by Manager --></label>
+        <name>Approved_by_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Service Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Service Timecards --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date of  Service --></label>
+        <name>Date_of_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours Worked --></label>
+        <name>Hours_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Notes --></label>
+        <name>Service_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Performed --></label>
+        <name>Service_Performed__c</name>
+        <picklistValues>
+            <masterLabel>Installation</masterLabel>
+            <translation><!-- Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance - Emergency Repair</masterLabel>
+            <translation><!-- Maintenance - Emergency Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance - Routine</masterLabel>
+            <translation><!-- Maintenance - Routine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other - Specify in Notes</masterLabel>
+            <translation><!-- Other - Specify in Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement</masterLabel>
+            <translation><!-- Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade</masterLabel>
+            <translation><!-- Upgrade --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Technician --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Service Timecards --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Service Timecard Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Detail Information --></label>
+            <section>Detail Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- ServiceTechnicianTimecards --></label>
+        <name>ServiceTechnicianTimecards</name>
+    </webLinks>
+</CustomObjectTranslation>

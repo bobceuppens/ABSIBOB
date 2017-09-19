@@ -1,0 +1,3 @@
+<apex:page standardController="WTRC_Shipment__c">
+    <apex:iframe src="http://80.65.129.210/servlet/authentification.accessControllerTrackTracePublic?WTact=init&From=ESTONIA&FORM=TRACKTRACERESULT&ITEM=CC275651495EE" scrolling="false" id="theIframe"/>
+</apex:page>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <name>isTrue</name>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </constants>
+    <interviewLabel>Test Create Document {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test Create Document</label>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>DocCreate</name>
+        <label>DocCreate</label>
+        <locationX>230</locationX>
+        <locationY>94</locationY>
+        <inputAssignments>
+            <field>Body</field>
+            <value>
+                <elementReference>BodyFromScreenLong</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DeveloperName</field>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FolderId</field>
+            <value>
+                <stringValue>00580000001d8FZ</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <stringValue>testdoc</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Document</object>
+    </recordCreates>
+    <screens>
+        <name>Get_Body</name>
+        <label>Get Body</label>
+        <locationX>42</locationX>
+        <locationY>181</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>DocCreate</targetReference>
+        </connector>
+        <fields>
+            <name>BodyFromScreenLong</name>
+            <fieldType>LargeTextArea</fieldType>
+            <isRequired>false</isRequired>
+        </fields>
+    </screens>
+    <startElementReference>Get_Body</startElementReference>
+</Flow>

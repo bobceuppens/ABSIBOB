@@ -1,0 +1,5 @@
+<apex:page standardController="Opportunity" extensions="WTRC_TransferOppToShipmentController" action="{!transferToShipment}">
+<apex:sectionHeader title="Transfer To Shipment" />
+<apex:Messages />
+<a href="{!returnUrl}">Return to Quote</a>
+</apex:page>

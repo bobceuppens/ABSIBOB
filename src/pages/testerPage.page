@@ -1,0 +1,26 @@
+<apex:page standardController="Contact" title="TestPage">
+<apex:form >
+<apex:messages />
+<apex:pageBlock title="PageBlock"  mode="edit">
+<apex:pageBlockSection title="Page block section">
+  <apex:outputLabel value="Birth date" for="mId"/>
+  <apex:outputPanel styleClass="requiredInput" layout="block">
+   <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+  <apex:inputText value="{!contact.Birthdate}" required="true" id="mId"/>
+ </apex:outputPanel>
+</apex:pageBlockSection>
+<apex:pageBlockSection title="Page block section">
+<apex:pageBlockSectionItem >
+  <apex:outputLabel value="Birth date" for="mId"/>
+  <apex:outputPanel styleClass="requiredInput" layout="block">
+   <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+    <apex:selectList value="{!contact.LeadSource}" size="1" required="true" />
+ </apex:outputPanel>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+<apex:pageblockButtons >
+<apex:commandButton action="{!save}" value="save"></apex:commandButton>
+</apex:pageblockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

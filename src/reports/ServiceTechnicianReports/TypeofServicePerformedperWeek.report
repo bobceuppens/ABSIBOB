@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_NAME</field>
+    </columns>
+    <columns>
+        <field>SFDC_Service_Timecard__c.User__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>SFDC_Service_Timecard__c.Hours_Worked__c</field>
+    </columns>
+    <description>How are our service technicians spending their time?</description>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>SFDC_Service_Timecard__c.Service_Performed__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Week</dateGranularity>
+        <field>SFDC_Service_Timecard__c.Date_of_Service__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Type of Service Performed per Week</name>
+    <reportType>CustomEntity$SFDC_Service_Timecard__c@SFDC_Service_Timecard__c.Contract__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>SFDC_Service_Timecard__c.Date_of_Service__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

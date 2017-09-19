@@ -1,0 +1,30 @@
+<apex:page controller="TandTController">
+<br/>
+<br/>
+
+<apex:form >
+<apex:outputLabel >Source User</apex:outputLabel>
+<br/>
+<apex:inputText id="master" value="{!master}" />
+<br/>
+<br/>
+<apex:outputLabel >Target User</apex:outputLabel>
+<br/>
+<apex:inputText id="itemid" value="{!itemid}" />
+<br/>
+<br/>
+<apex:commandButton value="Transfer Data" id="btnCopy" rerender="newData" action="{!search}"/>
+</apex:form>
+<br/>
+<br/>
+<br/>
+<apex:form >
+<apex:pageBlock id="newData"><apex:pageBlockTable value="{!resultSet}" var="sn">
+<apex:column ><apex:commandLink ><apex:outputText value="{!sn.serialnumber}"></apex:outputText></apex:commandLink></apex:column>
+<apex:column ><apex:outputText value="{!sn.company}"></apex:outputText></apex:column>
+<apex:column ><apex:outputText value="{!sn.warranty}"></apex:outputText></apex:column>
+</apex:pageBlockTable>
+</apex:pageBlock>
+</apex:form>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

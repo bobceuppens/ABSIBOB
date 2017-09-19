@@ -1,0 +1,34 @@
+<apex:page standardController="Account" extensions="controllerWS_Tester" showHeader="false" sidebar="false"> 
+
+	<apex:form >
+		&nbsp;&nbsp;&nbsp;
+		<apex:commandButton value="Actuele Navision Prijzen / Kortingen" action="{!getWSNavisionPrices}"/>
+		&nbsp;&nbsp;&nbsp;
+		<apex:commandButton value="Actuele Navision Openstaande Posten" action="{!getWSNavisionAmountsDue}"/>
+	</apex:form>
+	
+	<br/>
+	Customer Code
+	<br/>
+	<apex:outputText value="{!Navision_DTO.CustomerCode}" />
+	<br/>
+	Last Updated&nbsp;<apex:outputText value="{!Navision_DTO.lastUpdatedDateTime}" />
+	<br/><br/>
+	<table border="1">
+		<tr>
+			<td>DocumentNo</td>
+			<td>Amount</td>
+			<td>RemainingAmount</td>
+			<td>DueDate</td>
+		</tr>
+	<apex:repeat value="{!Navision_DTO.CustomerLedgerEntry}" var="curCustomerLedgerEntry">
+		<tr>
+			<td><apex:outputText value="{!curCustomerLedgerEntry.DocumentNo}" /></td>
+			<td><apex:outputText value="{!curCustomerLedgerEntry.Amount}" /></td>
+			<td><apex:outputText value="{!curCustomerLedgerEntry.RemainingAmount}" /></td>
+			<td><apex:outputText value="{!curCustomerLedgerEntry.DueDate}" /></td>
+		</tr>
+	</apex:repeat>
+	</table>
+	<br/><br/>
+</apex:page>

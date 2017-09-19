@@ -1,0 +1,18 @@
+<apex:page id="thePage">
+     <style> body { background-color:#" } </style>
+        <img src="https://na6.salesforce.com/servlet/servlet.ImageServer?id=01580000000Z0ER&oid=00D80000000KVvd&lastMod=1233052755000"/>
+        <apex:dataTable columnsWidth="100px, 100px" value="{!accounts}" var="account" id="theTable" rowClasses="odd,even" styleClass="tableClass" style="color:black;background-color:#ff9999">>
+                <apex:facet name="header">table header</apex:facet>
+                <apex:facet name="footer">table footer</apex:facet>
+                <apex:column >
+                        <apex:facet name="header">Name</apex:facet>
+                        <apex:facet name="footer">column footer</apex:facet>
+                        <apex:outputText value="{!account}"/>
+                </apex:column>
+                <apex:column >
+                        <apex:facet name="header">Owner</apex:facet>
+                        <apex:facet name="footer">column footer</apex:facet>
+                        <apex:outputText value="{!account}"/>
+                </apex:column>
+        </apex:dataTable>
+</apex:page>

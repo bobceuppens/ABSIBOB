@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>googSession</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>googSessions</value>
+    </caseValues>
+    <fields>
+        <label><!-- AuthSubSessionToken --></label>
+        <name>AuthSubSessionToken__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scope --></label>
+        <name>Scope__c</name>
+        <picklistValues>
+            <masterLabel>Calendar</masterLabel>
+            <translation><!-- Calendar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sheet</masterLabel>
+            <translation><!-- Sheet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>null</masterLabel>
+            <translation><!-- null --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

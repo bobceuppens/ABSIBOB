@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Form Field</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Form Fields</value>
+    </caseValues>
+    <fields>
+        <label><!-- APIRequired --></label>
+        <name>APIRequired__c</name>
+    </fields>
+    <fields>
+        <label><!-- Boolean Value --></label>
+        <name>Boolean_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency Value --></label>
+        <name>Currency_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- DateTime Value --></label>
+        <name>DateTime_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Value --></label>
+        <name>Date_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Value --></label>
+        <name>Email_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this field to hide it on the form. Hidden fields require a default value. --></help>
+        <label><!-- Hidden --></label>
+        <name>Hidden__c</name>
+    </fields>
+    <fields>
+        <label><!-- Label --></label>
+        <name>Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Value --></label>
+        <name>Number_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percent Value --></label>
+        <name>Percent_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Value --></label>
+        <name>Phone_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- PicklistEntries --></label>
+        <name>PicklistEntries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist_Value --></label>
+        <name>Picklist_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Area Long Value --></label>
+        <name>Text_Area_Long_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Area Value --></label>
+        <name>Text_Area_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Value --></label>
+        <name>Text_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- URL Value --></label>
+        <name>URL_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Form --></label>
+        <name>Web_Form__c</name>
+        <relationshipLabel><!-- Form Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Width --></label>
+        <name>Width__c</name>
+    </fields>
+    <layouts>
+        <layout>Form Field Layout</layout>
+        <sections>
+            <label><!-- Values --></label>
+            <section>Values</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

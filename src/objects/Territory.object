@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>Business_Unit__c</fullName>
+        <description>Used in Business Intelligence to identify for which Business Unit the territory is applicable</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in Business Intelligence to identify for which Business Unit the territory is applicable</inlineHelpText>
+        <label>Business Unit</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Diabetes</fullName>
+                    <default>false</default>
+                    <label>Diabetes</label>
+                </value>
+                <value>
+                    <fullName>Kyphon</fullName>
+                    <default>false</default>
+                    <label>Kyphon</label>
+                </value>
+                <value>
+                    <fullName>Cross-BU</fullName>
+                    <default>false</default>
+                    <label>Cross-BU</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CaseAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>ContactAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DeveloperName</fullName>
+    </fields>
+    <fields>
+        <fullName>ForecastUserId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>MayForecastManagerShare</fullName>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+    </fields>
+    <fields>
+        <fullName>OpportunityAccessLevel</fullName>
+    </fields>
+    <fields>
+        <fullName>ParentTerritoryId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>RestrictOpportunityTransfer</fullName>
+    </fields>
+    <fields>
+        <fullName>Territory_Type__c</fullName>
+        <description>Used in Business Intelligence to identify the territory level</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used in Business Intelligence to identify the territory level</inlineHelpText>
+        <label>Territory Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Country Group</fullName>
+                    <default>false</default>
+                    <label>Country Group</label>
+                </value>
+                <value>
+                    <fullName>Country</fullName>
+                    <default>false</default>
+                    <label>Country</label>
+                </value>
+                <value>
+                    <fullName>District</fullName>
+                    <default>false</default>
+                    <label>District</label>
+                </value>
+                <value>
+                    <fullName>Sales Rep</fullName>
+                    <default>false</default>
+                    <label>Sales Rep</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>User_Account_ID__c</fullName>
+        <description>Used in Business Intelligence to identify the primary user of this territory. In combination with the Business Unit and Territory Type  field BI can determine the role of this user</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Copy paste the User Account Record&apos;s ID of the primary user in this field. For Diabetes this fields needs to be filled out mandatory. The user&apos;s account must be active. Used in Business Intelligence to identify the primary user of this territory.</inlineHelpText>
+        <label>Primary User Account ID</label>
+        <length>90</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

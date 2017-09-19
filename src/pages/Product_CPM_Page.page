@@ -1,0 +1,28 @@
+<apex:page standardController="Product2" extensions="controllerProduct2">
+	<apex:form >
+		<apex:pageBlock >
+		<apex:pageBlockSection title="Product" columns="1">
+			<apex:pageBlockSectionItem >
+					<apex:outputLabel value="DART Inventory" />
+					<apex:outputLabel value="{!Product2.DART_Inventory__c}" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+					<apex:outputLabel value="DART ID" />
+					<apex:outputLabel value="60691_340x40" />
+			</apex:pageBlockSectionItem>			
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="Inventory" />
+				<apex:outputLabel id="liveInventoryField" value="{!liveInventory}" />
+			</apex:pageBlockSectionItem>
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="DART Live Inventory" />
+				<apex:outputLabel id="DART_Live_Inventory" value="{!Product2.DART_Live_Inventory__c}" />
+			</apex:pageBlockSectionItem>	
+			<apex:pageBlockSectionItem >
+				<apex:outputLabel value="" />
+				<apex:commandButton action="{!updateInventory}" value="Check Inventory" rerender="liveInventoryField"/>
+			</apex:pageBlockSectionItem>			
+		</apex:pageBlockSection>
+		</apex:pageBlock>
+	</apex:form>
+</apex:page>

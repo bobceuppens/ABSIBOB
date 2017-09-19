@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <constants>
+        <name>isTrue</name>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </constants>
+    <decisions>
+        <name>Always_do</name>
+        <label>Always do</label>
+        <locationX>62</locationX>
+        <locationY>194</locationY>
+        <defaultConnectorLabel>[Default Outcome]</defaultConnectorLabel>
+        <rules>
+            <name>outcome_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>isTrue</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DocCreate</targetReference>
+            </connector>
+            <label>outcome true</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Test Create Document {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test Create Document</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>DocCreate</name>
+        <label>DocCreate</label>
+        <locationX>203</locationX>
+        <locationY>68</locationY>
+        <inputAssignments>
+            <field>Body</field>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DeveloperName</field>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>FolderId</field>
+            <value>
+                <stringValue>00580000001d8FZ</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Document</object>
+    </recordCreates>
+    <startElementReference>DocCreate</startElementReference>
+</Flow>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Le montant total des paiements résultant d&apos;un accord.</help>
+        <label><!-- Amount From Agreements --></label>
+        <name>soco__Amount_From_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Montant total des promesses ponctuelles.</help>
+        <label><!-- Amount Of One-Time Agreements --></label>
+        <name>soco__Amount_Of_One_Time_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Le montant total des paiements ne résultant pas d&apos;un accord.</help>
+        <label><!-- Amount Of Payments --></label>
+        <name>soco__Amount_Of_Payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avarage Gift Amount --></label>
+        <name>soco__Avarage_Gift_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination --></label>
+        <name>soco__Destination__c</name>
+        <relationshipLabel><!-- Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Generate Payment Reference for Members --></label>
+        <name>soco__Generate_Payment_Reference_for_Members__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre d&apos;accords qui ont cette campagne répertorié comme &quot;campagne d&apos;origine&quot;</help>
+        <label><!-- Number Of Agreements --></label>
+        <name>soco__Number_Of_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de nouveaux contacts (relations entre les personnes et les comptes / foyers) en raison de cette campagne</help>
+        <label><!-- Number Of New Contacts --></label>
+        <name>soco__Number_Of_New_Contacts__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de nouveaux foyers enregistrée en raison de cette campagne.</help>
+        <label><!-- Number Of New Households --></label>
+        <name>soco__Number_Of_New_Households__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre total d&apos;accords ponctuels résultant de cette campagne.</help>
+        <label><!-- Number Of One-Time Agreements --></label>
+        <name>soco__Number_Of_One_Time_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de paiements résultant d&apos;un accord.</help>
+        <label><!-- Number Of Payments From Agreements --></label>
+        <name>soco__Number_Of_Payments_From_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de nouvelles personnes issues de cette campagne.</help>
+        <label><!-- Number Of new Persons --></label>
+        <name>soco__Number_Of_new_Persons__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de nouveaux comptes (ex foyers)</help>
+        <label><!-- Number of New Accounts --></label>
+        <name>soco__Number_of_New_Accounts__c</name>
+    </fields>
+    <fields>
+        <help>Le nombre de paiements ne résultant pas d&apos;un accord.</help>
+        <label><!-- Number of Payments --></label>
+        <name>soco__Number_of_Payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>soco__Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Acceptgiro</masterLabel>
+            <translation><!-- Acceptgiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banktransfer</masterLabel>
+            <translation>Virement bancaire</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation>Espèces</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Reference --></label>
+        <name>soco__Payment_Reference__c</name>
+    </fields>
+    <fields>
+        <help>Le montant total d&apos;argent effectivement reçu.</help>
+        <label><!-- Realized Revenue --></label>
+        <name>soco__Realized_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Utilisé pour générer des références de paiement</help>
+        <label><!-- Reference number --></label>
+        <name>soco__Reference_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the status Campaign Members should have if a payment is received for this Campaign Member. --></help>
+        <label><!-- Responded Status --></label>
+        <name>soco__Responded_Status__c</name>
+    </fields>
+    <fields>
+        <help>La valeur totale (annuelle) de tous les accords. (par exemple, € 25 / mois = 300 chaque année)</help>
+        <label><!-- Total Yearly Value Of Agreements --></label>
+        <name>soco__Total_Yearly_Value_Of_Agreements__c</name>
+    </fields>
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Generate_Member_Payment_References --></label>
+        <name>soco__Generate_Member_Payment_References</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Payment_Reference --></label>
+        <name>soco__Generate_Payment_Reference</name>
+    </webLinks>
+</CustomObjectTranslation>

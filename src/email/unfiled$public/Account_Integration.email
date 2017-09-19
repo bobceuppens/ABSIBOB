@@ -1,0 +1,2 @@
+The Account {!Account.Name} was processed by Integration.
+Account Id = {!Account.Id}

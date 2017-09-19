@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Het totaalbedrag aan betalingen voorkomend uit een overeenkomst.</help>
+        <label><!-- Amount From Agreements --></label>
+        <name>soco__Amount_From_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan toegezegde eenmalige overeenkomsten.</help>
+        <label><!-- Amount Of One-Time Agreements --></label>
+        <name>soco__Amount_Of_One_Time_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Het totaalbedrag aan losse giften.</help>
+        <label><!-- Amount Of Payments --></label>
+        <name>soco__Amount_Of_Payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avarage Gift Amount --></label>
+        <name>soco__Avarage_Gift_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Destination --></label>
+        <name>soco__Destination__c</name>
+        <relationshipLabel><!-- Campaigns --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Generate Payment Reference for Members --></label>
+        <name>soco__Generate_Payment_Reference_for_Members__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal overeenkomsten met deze campagne als Herkomstcampagne</help>
+        <label><!-- Number Of Agreements --></label>
+        <name>soco__Number_Of_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal nieuwe contacten</help>
+        <label><!-- Number Of New Contacts --></label>
+        <name>soco__Number_Of_New_Contacts__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal nieuwe households</help>
+        <label><!-- Number Of New Households --></label>
+        <name>soco__Number_Of_New_Households__c</name>
+    </fields>
+    <fields>
+        <help>Het totaal aantal overeenkomsten</help>
+        <label><!-- Number Of One-Time Agreements --></label>
+        <name>soco__Number_Of_One_Time_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal betalingen voorkomend uit een overeenkomst.</help>
+        <label><!-- Number Of Payments From Agreements --></label>
+        <name>soco__Number_Of_Payments_From_Agreements__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal nieuwe person records</help>
+        <label><!-- Number Of new Persons --></label>
+        <name>soco__Number_Of_new_Persons__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal nieuwe accounts (exclusief households)</help>
+        <label><!-- Number of New Accounts --></label>
+        <name>soco__Number_of_New_Accounts__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal losse giften.</help>
+        <label><!-- Number of Payments --></label>
+        <name>soco__Number_of_Payments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Method --></label>
+        <name>soco__Payment_Method__c</name>
+        <picklistValues>
+            <masterLabel>Acceptgiro</masterLabel>
+            <translation><!-- Acceptgiro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banktransfer</masterLabel>
+            <translation>Bank Overboeking</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation>Contant</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Reference --></label>
+        <name>soco__Payment_Reference__c</name>
+    </fields>
+    <fields>
+        <help>Totaalbedrag van alle betalingen</help>
+        <label><!-- Realized Revenue --></label>
+        <name>soco__Realized_Revenue__c</name>
+    </fields>
+    <fields>
+        <help>Wordt gebruikt om betalingskenmerken te genereren</help>
+        <label><!-- Reference number --></label>
+        <name>soco__Reference_number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the status Campaign Members should have if a payment is received for this Campaign Member. --></help>
+        <label><!-- Responded Status --></label>
+        <name>soco__Responded_Status__c</name>
+    </fields>
+    <fields>
+        <help>Totale jaarwaarde van alle overeenkomsten (voorbeeld: 25 euro/maand = 300 p/jaar)</help>
+        <label><!-- Total Yearly Value Of Agreements --></label>
+        <name>soco__Total_Yearly_Value_Of_Agreements__c</name>
+    </fields>
+    <layouts>
+        <layout>Campaign Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <webLinks>
+        <label><!-- Generate_Member_Payment_References --></label>
+        <name>soco__Generate_Member_Payment_References</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Generate_Payment_Reference --></label>
+        <name>soco__Generate_Payment_Reference</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Electrical</masterLabel>
+        <translation><!-- Electrical --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Electronic</masterLabel>
+        <translation><!-- Electronic --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Mechanical</masterLabel>
+        <translation><!-- Mechanical --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Defined</masterLabel>
+        <translation>Niet Gedefinieerd</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Other</masterLabel>
+        <translation>Andere</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Structural</masterLabel>
+        <translation><!-- Structural --></translation>
+    </valueTranslation>
+</StandardValueSetTranslation>

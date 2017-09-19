@@ -1,0 +1,59 @@
+<apex:page standardController="WTRC_Shipment__c" extensions="WTRACE_controllerTandT" showHeader="false" sidebar="true" standardStylesheets="true"> 
+
+<apex:messages />
+
+<apex:outputPanel layout="block" id="OutputPanelWtrace">	
+
+<apex:form id="WtraceForm">
+	
+	<div style="display:inline">
+	<table>
+	<tr>
+		<td width="100px"></td>
+		<td width="200px"></td>
+		<td width="100px">
+			<apex:commandButton id="WtraceTandTCmdButton" value="Get Track & Trace" action="{!getWtraceTandT}"  status="NavisionUpdateStatus" reRender="OutputPanelWtrace" />
+		</td>	
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	</table>
+	
+	</div>
+
+</apex:form>
+
+	<apex:pageBlock title="Events" rendered="{!renderTandTBlock}">
+		<apex:pageBlockTable value="{!Wtrace_DTO.myTandTElement.myTandTEvents}" var="curTandTElement" id="theTable" rowClasses="odd,even">
+
+		<apex:column >
+			<apex:facet name="header">Event</apex:facet>
+			<apex:outputText value="{!curTandTElement.eventCode}"/>
+		</apex:column>
+
+		<apex:column >
+			<apex:facet name="header">Date</apex:facet>
+			<apex:outputText value="{!curTandTElement.actualDate}"/>
+		</apex:column>
+
+		<apex:column >
+			<apex:facet name="header">Location</apex:facet>
+			<apex:outputText value="{!curTandTElement.location}"/>
+		</apex:column>
+
+		</apex:pageBlockTable>
+	</apex:pageBlock>
+
+	<table>
+	<tr>
+		<td>
+			<br/>
+			<apex:outputText rendered="true" value=" {!myTandTXML}"/>
+		</td>
+	</tr>	
+	</table>
+
+</apex:outputPanel>
+
+</apex:page>

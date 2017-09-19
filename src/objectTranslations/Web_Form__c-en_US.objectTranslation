@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Web Form</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Web Forms</value>
+    </caseValues>
+    <fields>
+        <label><!-- Background Color --></label>
+        <name>Background_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label of the object which fields will be filled by this form. --></help>
+        <label><!-- Object Label --></label>
+        <name>Object_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the object which fields will be filled by this form. --></help>
+        <label><!-- Object Name --></label>
+        <name>Object_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL the user will be redirected to after saving the form. --></help>
+        <label><!-- Return URL --></label>
+        <name>Return_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The text that will appear on the form&apos;s save button. --></help>
+        <label><!-- Save Button Text --></label>
+        <name>Save_Button_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- SavedByWebformeditor --></label>
+        <name>SavedByWebformeditor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Text Color --></label>
+        <name>Text_Color__c</name>
+    </fields>
+    <fields>
+        <help><!-- The title that will appear on the form. This can be left blank. --></help>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Web Form ID --></label>
+        <name>Web_Form_ID__c</name>
+    </fields>
+    <layouts>
+        <layout>Web Form Layout</layout>
+        <sections>
+            <label><!-- Layout options --></label>
+            <section>Layout options</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The &apos;Name&apos; field can not be empty. --></errorMessage>
+        <name>Web_Form_Name_field_can_not_be_empty</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Preview --></label>
+        <name>Preview</name>
+    </webLinks>
+</CustomObjectTranslation>

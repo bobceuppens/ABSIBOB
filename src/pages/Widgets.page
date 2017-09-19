@@ -1,0 +1,35 @@
+<apex:page showHeader="false" controller="controllerWS_Tester">
+<apex:form >
+<head>
+<link href="{!URLFOR($Resource.DatePicker,'development-bundle/themes/base/jquery.ui.all.css')}" rel="stylesheet" />
+<script src="{!URLFOR($Resource.Datepicker,'development-bundle/jquery-1.6.2.js')}"></script>
+<script src="{!URLFOR($Resource.Datepicker,'development-bundle/ui/jquery.ui.core.js')}"></script>
+<script src="{!URLFOR($Resource.Datepicker,'development-bundle/ui/jquery.ui.datepicker.js')}"></script>
+<link href="{!URLFOR($Resource.Datepicker,'development-bundle/demos/demos.css')}" rel="stylesheet" />
+<link href="{!URLFOR($Resource.Datepicker,'css/ui-lightness/jquery-ui-1.8.16.custom.css')}" rel="stylesheet" />
+<style>
+.clsstyle{
+font-size:18px;   
+}
+.clslabel{
+font-size:12px;
+}
+</style>
+ </head>
+ <body>
+ <script>
+	$(function() {
+		$( "#datepicker" ).datepicker({dateFormat: 'mm/dd/yy',changeMonth: true,changeYear: true,showButtonPanel: true});
+	});
+	</script>
+
+
+
+<div class="demo">
+
+<p>Date: <input type="text" id="datepicker" /></p>
+
+</div><!-- End demo -->
+  </body>
+ </apex:form>
+</apex:page>

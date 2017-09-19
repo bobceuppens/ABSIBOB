@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shipment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shipments</value>
+    </caseValues>
+    <fields>
+        <label><!-- CODCOP Amount --></label>
+        <name>CODCOP_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- COD Amount --></label>
+        <name>COD_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+        <picklistValues>
+            <masterLabel>BK/B.KARTE, B.KALKULATORS</masterLabel>
+            <translation><!-- BK/B.KARTE, B.KALKULATORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BK/CITAS LIETAS</masterLabel>
+            <translation><!-- BK/CITAS LIETAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BK/DOKUMENTI</masterLabel>
+            <translation><!-- BK/DOKUMENTI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BKK/B.KARTE, B.KALKULATORS</masterLabel>
+            <translation><!-- BKK/B.KARTE, B.KALKULATORS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BKK/CITAS LIETAS</masterLabel>
+            <translation><!-- BKK/CITAS LIETAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BKK/DOKUMENTI</masterLabel>
+            <translation><!-- BKK/DOKUMENTI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Client City --></label>
+        <name>Client_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Country --></label>
+        <name>Client_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Email --></label>
+        <name>Client_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Phone --></label>
+        <name>Client_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Street --></label>
+        <name>Client_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Zip --></label>
+        <name>Client_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+        <relationshipLabel><!-- Shipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content Type --></label>
+        <name>Content_Type__c</name>
+        <picklistValues>
+            <masterLabel>DOCUMENT</masterLabel>
+            <translation><!-- DOCUMENT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MERCHANDISE</masterLabel>
+            <translation><!-- MERCHANDISE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Declared Value --></label>
+        <name>Declared_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Option --></label>
+        <name>Delivery_Option__c</name>
+        <picklistValues>
+            <masterLabel>BUSINESS</masterLabel>
+            <translation><!-- BUSINESS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ECONOMY</masterLabel>
+            <translation><!-- ECONOMY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Barcode --></label>
+        <name>ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Includes --></label>
+        <name>Includes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Insured Value --></label>
+        <name>Insured_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load Service --></label>
+        <name>Load_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master --></label>
+        <name>Master__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Shipments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Order Number --></label>
+        <name>Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packets --></label>
+        <name>Packets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parcel Description --></label>
+        <name>Parcel_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Option --></label>
+        <name>Payment_Option__c</name>
+        <picklistValues>
+            <masterLabel>RECEIVER</masterLabel>
+            <translation><!-- RECEIVER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SENDER</masterLabel>
+            <translation><!-- SENDER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THIRD PARTY</masterLabel>
+            <translation><!-- THIRD PARTY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Type --></label>
+        <name>Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parcels</masterLabel>
+            <translation><!-- Parcels --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receiver Location --></label>
+        <name>Receiver_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Receiver Name --></label>
+        <name>Receiver_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Return docs --></label>
+        <name>Return_docs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>Service__c</name>
+        <picklistValues>
+            <masterLabel>Delivery on specified date/time</masterLabel>
+            <translation><!-- Delivery on specified date/time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Size Deap --></label>
+        <name>Size_Deap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size High --></label>
+        <name>Size_High__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size Long --></label>
+        <name>Size_Long__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Generated XML --></label>
+        <name>WTRACE_XML__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>Weight__c</name>
+    </fields>
+    <layouts>
+        <layout>Shipment Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Shipment --></label>
+        <name>Shipment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Shipment With Items --></label>
+        <name>Shipment_With_Items</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Print_Label --></label>
+        <name>Print_Label</name>
+    </webLinks>
+</CustomObjectTranslation>
