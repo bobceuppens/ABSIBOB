@@ -6,7 +6,6 @@
     <tab>standard-Workspace</tab>
     <tab>standard-ContentSearch</tab>
     <tab>standard-ContentSubscriptions</tab>
-    <tab>standard-ContentFavorites</tab>
     <tab>Shipment__c</tab>
     <tab>Canvas_Iframe</tab>
 </CustomApplication>

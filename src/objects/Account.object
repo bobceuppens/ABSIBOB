@@ -1048,6 +1048,7 @@
     </fields>
     <fields>
         <fullName>Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
         <description>Duplication of Id.
 Used for data testing purposes.</description>
         <externalId>true</externalId>
@@ -1057,7 +1058,7 @@ Used for data testing purposes.</description>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
-        <unique>false</unique>
+        <unique>true</unique>
     </fields>
     <fields>
         <fullName>Industry</fullName>
