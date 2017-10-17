@@ -72,9 +72,6 @@
         <members>Campaign_Account__c</members>
         <members>Case</members>
         <members>CaseContactRole</members>
-        <members>ChannelProgram</members>
-        <members>ChannelProgramLevel</members>
-        <members>ChannelProgramMember</members>
         <members>Contact</members>
         <members>ContentVersion</members>
         <members>Contract</members>
@@ -91,7 +88,6 @@
         <members>ExchangeUserMapping</members>
         <members>Favorite__c</members>
         <members>FeedItem</members>
-        <members>Idea</members>
         <members>Invoice1__c</members>
         <members>Invoice2__c</members>
         <members>Item__c</members>
@@ -110,16 +106,11 @@
         <members>OpportunityTeamMember</members>
         <members>Order</members>
         <members>OrderItem</members>
-        <members>PartnerFundAllocation</members>
-        <members>PartnerFundClaim</members>
-        <members>PartnerFundRequest</members>
-        <members>PartnerMarketingBudget</members>
         <members>PartnerRole</members>
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
         <members>Product2</members>
         <members>Property__c</members>
-        <members>Quote</members>
         <members>QuoteLineItem</members>
         <members>SDU_Project__c</members>
         <members>SFDC_Service_Timecard__c</members>
