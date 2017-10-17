@@ -21,8 +21,6 @@
     <tab>standard-Event</tab>
     <tab>standard-OtherUserProfile</tab>
     <tab>standard-Case</tab>
-    <tab>standard-News</tab>
-    <tab>standard-ForecastingLightning</tab>
     <tab>standard-Quote</tab>
     <uiType>Lightning</uiType>
 </CustomApplication>

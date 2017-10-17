@@ -1,3 +1,0 @@
-<apex:page showheader="false" cache="true" expires="600">
-	<c:contentblock name="main"/>
-</apex:page>

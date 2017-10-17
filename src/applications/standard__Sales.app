@@ -31,7 +31,6 @@
     <tab>Sleuth_Configurations</tab>
     <tab>Contact_Duplicates</tab>
     <tab>Account_Dup_Status</tab>
-    <tab>Test__c</tab>
     <tab>test</tab>
     <tab>Vehicle__c</tab>
     <tab>Shipment__c</tab>

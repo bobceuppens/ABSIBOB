@@ -4,7 +4,7 @@
  * @since           : May 07, 2010  
  * Copyright 2010 ABSI. All rights reserved. 
  ******************************************************/
- //EDIT BY BOB for Sandbox 15:10
+ //EDIT BY BOB
 public with sharing class ABSI_MassTaskController {
 
     //Capture the values for the standard Task

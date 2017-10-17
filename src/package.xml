@@ -157,35 +157,6 @@
         <name>DataCategoryGroup</name>
     </types>
     <types>
-        <members>BLND_Logos_Identity</members>
-        <members>BLND_Logos_Identity/BLND_DreamFactory_Logo.gif</members>
-        <members>CMSForceDocuments</members>
-        <members>CMSForceDocuments/getting_started_123_gif1.gif</members>
-        <members>CMSForceDocuments/getting_started_banner_gif.gif</members>
-        <members>Communities_Shared_Document_Folder</members>
-        <members>Communities_Shared_Document_Folder/DreamHouzz_Logo.png</members>
-        <members>Communities_Shared_Document_Folder_old</members>
-        <members>Communities_Shared_Document_Folder_old/absi_logo_new_super_small_jpg.jpg</members>
-        <members>Mass_Task</members>
-        <members>Mass_Task/ABSI_logo.jpg</members>
-        <members>NewsPaper_Images</members>
-        <members>NewsPaper_Images/About_Our_Newspaper_Company.gif</members>
-        <members>NewsPaper_Images/Glasses.gif</members>
-        <members>NewsPaper_Images/Man_With_Newspaper.gif</members>
-        <members>NewsPaper_Images/Read_More_Bullet.gif</members>
-        <members>NewsPaper_Images/Updated_News.gif</members>
-        <members>NewsPaper_Images/Welcome_To_Our_Newspaper.gif</members>
-        <members>Public</members>
-        <members>Public/KCOL_Push_notifications_architecture.pdf</members>
-        <members>Quote_invoice_order</members>
-        <members>Quote_invoice_order/Logo4567687_gif.gif</members>
-        <members>TimeTracking</members>
-        <members>TimeTracking/AppExchangeLogo.gif</members>
-        <members>TimeTracking/Logo.gif</members>
-        <members>TimeTracking/TimetrackLogo.jpg</members>
-        <name>Document</name>
-    </types>
-    <types>
         <members>Quotes</members>
         <members>Quotes/Invoice</members>
         <members>Quotes/Quote</members>
@@ -236,10 +207,6 @@
     <types>
         <members>*</members>
         <name>Group</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>InstalledPackage</name>
     </types>
     <types>
         <members>*</members>

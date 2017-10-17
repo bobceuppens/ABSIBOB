@@ -185,10 +185,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>DocumentBrowserController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>DocumentService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -225,18 +221,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>FormController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>FormFieldController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>FormItemIncludeController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>GenericFactory</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -250,10 +234,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>GoogleService</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>HomePageController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -305,22 +285,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>PageBrowserController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PageItemEditExtension</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PageItemIncludeController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>PageTemplateEditController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>PostPriceChangeToSlack</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -358,10 +322,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>RejectDuplicateFavoriteTest</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>RenderFormComponentController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -429,10 +389,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>TestWebFormTrigger</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>ThdCustomSearchController_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -454,10 +410,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>Util</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>VFTemplateEditController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -569,15 +521,7 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>WebFormEditorController</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>WebServiceHelper</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>WebformUtil</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -602,10 +546,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ccBatchDelContact_Scheduler</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>contentblockcomponentController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -646,10 +586,6 @@
     </classAccesses>
     <classAccesses>
         <apexClass>opportunityProductRedirectExtension</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
-        <apexClass>pageController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -1281,6 +1217,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Asset.Status</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.StockKeepingUnit</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -3539,21 +3480,6 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>ContentBlockItem__c.Content__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContentBlockItem__c.Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ContentBlockItem__c.Web_Form__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>ContentVersion.Account__c</field>
         <readable>false</readable>
@@ -3892,111 +3818,6 @@
         <editable>false</editable>
         <field>Favorite__c.User__c</field>
         <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.APIRequired__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Boolean_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Currency_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.DateTime_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Date_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Email_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Hidden__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Label__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Number_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Order__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Percent_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Phone_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.PicklistEntries__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Picklist_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Required__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Text_Area_Long_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Text_Area_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Text_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Type__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.URL_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Form_Field__c.Width__c</field>
-        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
@@ -4610,41 +4431,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PageTemplate__c.ContentBlockNames__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>PageToItem__c.Display_in_Contentblock__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>PageToItem__c.Order__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Page__c.Cache_expires__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Page__c.Home_Page__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Page__c.PageTemplateVFPage__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Page__c.PageTemplate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Pricebook2.Valid_From__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -4736,6 +4522,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Product2.SiteName__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Product2.StockKeepingUnit</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -5350,81 +5141,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Test__c.Checkbox__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Currency__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.DateTime__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Date__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Email__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Number__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Percent__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Phone__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.PickListMulti__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.PickList__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Text_Area_Long__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Text_Area__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Text__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Test__c.Web_Form__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Tram__c.Tramstation__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -5699,51 +5415,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Background_Color__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Description__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Object_Label__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Return_URL__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Save_Button_Text__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.SavedByWebformeditor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Text_Color__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Title__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Web_Form__c.Web_Form_ID__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>false</editable>
         <field>googSession__c.AuthSubSessionToken__c</field>
         <readable>false</readable>
@@ -5855,6 +5526,15 @@
         <layout>CaseClose-Close Case Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>ChannelProgram-Channel Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ChannelProgramLevel-Channel Program Level Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ChannelProgramMember-Channel Program Member Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>CollaborationGroup-Group Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -5867,9 +5547,6 @@
     <layoutAssignments>
         <layout>Contact-Contact Layout</layout>
         <recordType>Contact.Standard_Contact</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContentBlockItem__c-ContentBlock Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>ContentVersion-General</layout>
@@ -5906,9 +5583,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>FeedItem-Feed Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Form_Field__c-Form Field Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Global-Global Layout</layout>
@@ -5961,13 +5635,16 @@
         <layout>OrderItem-Order Product Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PageTemplate__c-PageTemplate Layout</layout>
+        <layout>PartnerFundAllocation-Partner Fund Allocation Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>PageToItem__c-PageItem Layout</layout>
+        <layout>PartnerFundClaim-Partner Fund Claim Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Page__c-Page Layout</layout>
+        <layout>PartnerFundRequest-Partner Fund Request Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>PartnerMarketingBudget-Partner Marketing Budget Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Pricebook2-Price Book Layout</layout>
@@ -5994,6 +5671,12 @@
         <layout>SFDC_Service_Timecard__c-Service Timecard Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>Scorecard-Scorecard Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>Shipment_Line__c-Shipment Line Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -6018,9 +5701,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Task-Task Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Test__c-Test Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Tram__c-Tram Layout</layout>
@@ -6050,9 +5730,6 @@
     <layoutAssignments>
         <layout>WTRC_Shipment__c-Shipment With Items Layout</layout>
         <recordType>WTRC_Shipment__c.Shipment_With_Items</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Web_Form__c-Web Form Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Zipcode__c-Zipcode Layout</layout>
@@ -6168,15 +5845,7 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>AppxTemplate</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>BandwidthExceeded</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>BlankTemplate</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6228,27 +5897,11 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>ContentBlockItemPreview</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>DataTables</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
         <apexPage>Delivery_Order</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>DeveloperForceTemplate</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>DocumentBrowser</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>DocumentManager</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6273,18 +5926,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>ForgotPasswordConfirm</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>Form</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>FormItemInclude</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>HomePage</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6316,31 +5957,7 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>NewsTemplate</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>OverrideNewContactButton</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>PageBrowser</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>PageItemEdit</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>PageItemInclude</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>PageTemplateEdit</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>PreviewError</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6380,10 +5997,6 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>TestTemplate</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>TimeSheetV1</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
@@ -6397,10 +6010,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>User_SwitchProfile</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>VFTemplateEdit</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6425,10 +6034,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>WTRC_TransferOppToShipment</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>WebFormEditor</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6461,10 +6066,6 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>opportunityProductRedirect</apexPage>
-        <enabled>false</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>page</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
@@ -6635,6 +6236,10 @@
     <userLicense>Customer Community</userLicense>
     <userPermissions>
         <enabled>true</enabled>
+        <name>AddDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>AllowUniversalSearch</name>
     </userPermissions>
     <userPermissions>
@@ -6655,10 +6260,22 @@
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
+        <name>RemoveDirectMessageMembers</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunFlow</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
         <name>SelectFilesFromSalesforce</name>
     </userPermissions>
     <userPermissions>
         <enabled>true</enabled>
         <name>ShowCompanyNameAsUserBadge</name>
+    </userPermissions>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>UseWebLink</name>
     </userPermissions>
 </Profile>
