@@ -72,8 +72,10 @@
         <members>Campaign_Account__c</members>
         <members>Case</members>
         <members>CaseContactRole</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
         <members>Contact</members>
-        <members>ContentBlockItem__c</members>
         <members>ContentVersion</members>
         <members>Contract</members>
         <members>ContractContactRole</members>
@@ -89,7 +91,6 @@
         <members>ExchangeUserMapping</members>
         <members>Favorite__c</members>
         <members>FeedItem</members>
-        <members>Form_Field__c</members>
         <members>Idea</members>
         <members>Invoice1__c</members>
         <members>Invoice2__c</members>
@@ -100,6 +101,7 @@
         <members>MacroAction</members>
         <members>MacroInstruction</members>
         <members>Mail__c</members>
+        <members>NetworkMember</members>
         <members>Notification__e</members>
         <members>Opportunity</members>
         <members>OpportunityCompetitor</members>
@@ -108,9 +110,10 @@
         <members>OpportunityTeamMember</members>
         <members>Order</members>
         <members>OrderItem</members>
-        <members>PageTemplate__c</members>
-        <members>PageToItem__c</members>
-        <members>Page__c</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
         <members>PartnerRole</members>
         <members>Pricebook2</members>
         <members>PricebookEntry</members>
@@ -120,6 +123,8 @@
         <members>QuoteLineItem</members>
         <members>SDU_Project__c</members>
         <members>SFDC_Service_Timecard__c</members>
+        <members>Scorecard</members>
+        <members>ScorecardMetric</members>
         <members>Shipment_Line__c</members>
         <members>Shipment__c</members>
         <members>Site</members>
@@ -128,7 +133,6 @@
         <members>StreamingChannel</members>
         <members>Task</members>
         <members>Territory</members>
-        <members>Test__c</members>
         <members>Tram__c</members>
         <members>Tramstation__c</members>
         <members>User</members>
@@ -136,7 +140,6 @@
         <members>Vehicle__c</members>
         <members>WTRC_Shipment_Line__c</members>
         <members>WTRC_Shipment__c</members>
-        <members>Web_Form__c</members>
         <members>Zipcode__c</members>
         <members>googSession__c</members>
         <name>CustomObject</name>
@@ -265,6 +268,7 @@
         <name>RemoteSiteSetting</name>
     </types>
     <types>
+        <members>KONE</members>
         <members>ServiceTechnicianReports</members>
         <members>ServiceTechnicianReports/ServiceTechUtilization</members>
         <members>ServiceTechnicianReports/TypeofServicePerformedperWeek</members>
@@ -326,8 +330,8 @@
         <members>Campaign</members>
         <members>Campaign_Account__c</members>
         <members>Case</members>
+        <members>ChannelProgram</members>
         <members>Contact</members>
-        <members>ContentBlockItem__c</members>
         <members>DFSS_Permissions__c</members>
         <members>DFSS_SnapShot_Item__c</members>
         <members>DFSS_SnapShot_Push__c</members>
@@ -335,7 +339,6 @@
         <members>Employee__c</members>
         <members>ExchangeUserMapping</members>
         <members>Favorite__c</members>
-        <members>Form_Field__c</members>
         <members>Invoice1__c</members>
         <members>Invoice2__c</members>
         <members>Item__c</members>
@@ -345,16 +348,18 @@
         <members>Mail__c</members>
         <members>Opportunity</members>
         <members>Order</members>
-        <members>PageTemplate__c</members>
-        <members>PageToItem__c</members>
-        <members>Page__c</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
         <members>Property__c</members>
+        <members>Quote</members>
         <members>SDU_Project__c</members>
         <members>SFDC_Service_Timecard__c</members>
+        <members>Scorecard</members>
         <members>Shipment_Line__c</members>
         <members>Shipment__c</members>
         <members>StreamingChannel</members>
-        <members>Test__c</members>
         <members>Tram__c</members>
         <members>Tramstation__c</members>
         <members>User</members>
@@ -362,7 +367,6 @@
         <members>Vehicle__c</members>
         <members>WTRC_Shipment_Line__c</members>
         <members>WTRC_Shipment__c</members>
-        <members>Web_Form__c</members>
         <members>Zipcode__c</members>
         <members>googSession__c</members>
         <name>SharingRules</name>
@@ -416,8 +420,10 @@
         <members>Campaign_Account__c</members>
         <members>Case</members>
         <members>CaseComment</members>
+        <members>ChannelProgram</members>
+        <members>ChannelProgramLevel</members>
+        <members>ChannelProgramMember</members>
         <members>Contact</members>
-        <members>ContentBlockItem__c</members>
         <members>Contract</members>
         <members>DFSS_Permissions__c</members>
         <members>DFSS_SnapShot_Item__c</members>
@@ -431,7 +437,6 @@
         <members>ExchangeUserMapping</members>
         <members>Favorite__c</members>
         <members>FeedItem</members>
-        <members>Form_Field__c</members>
         <members>Idea</members>
         <members>Invoice1__c</members>
         <members>Invoice2__c</members>
@@ -442,6 +447,7 @@
         <members>MacroAction</members>
         <members>MacroInstruction</members>
         <members>Mail__c</members>
+        <members>NetworkMember</members>
         <members>Notification__e</members>
         <members>Opportunity</members>
         <members>OpportunityLineItem</members>
@@ -449,9 +455,10 @@
         <members>Order</members>
         <members>OrderItem</members>
         <members>Organization</members>
-        <members>PageTemplate__c</members>
-        <members>PageToItem__c</members>
-        <members>Page__c</members>
+        <members>PartnerFundAllocation</members>
+        <members>PartnerFundClaim</members>
+        <members>PartnerFundRequest</members>
+        <members>PartnerMarketingBudget</members>
         <members>Product2</members>
         <members>Property__c</members>
         <members>Quote</members>
@@ -465,7 +472,6 @@
         <members>Solution</members>
         <members>StreamingChannel</members>
         <members>Task</members>
-        <members>Test__c</members>
         <members>Tram__c</members>
         <members>Tramstation__c</members>
         <members>User</members>
@@ -474,7 +480,6 @@
         <members>Vehicle__c</members>
         <members>WTRC_Shipment_Line__c</members>
         <members>WTRC_Shipment__c</members>
-        <members>Web_Form__c</members>
         <members>Zipcode__c</members>
         <members>googSession__c</members>
         <name>Workflow</name>
