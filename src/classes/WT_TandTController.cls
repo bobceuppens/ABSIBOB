@@ -2,7 +2,6 @@ public class WT_TandTController {
         
         String master{get;set;}
         String itemid;        
-        List<WorktraceTandT.echo> resultSet;
          
         public String getMaster() {
                 return master;
