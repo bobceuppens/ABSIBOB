@@ -2,7 +2,7 @@
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <outboundMessages>
         <fullName>Oppt_Push</fullName>
-        <apiVersion>8.0</apiVersion>
+        <apiVersion>40.0</apiVersion>
         <endpointUrl>http://80.65.128.7:8081/Demo/</endpointUrl>
         <fields>AccountId</fields>
         <fields>AdverteerderName__c</fields>
