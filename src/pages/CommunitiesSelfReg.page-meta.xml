@@ -7,6 +7,11 @@
     <label>CommunitiesSelfReg</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
+        <minorNumber>0</minorNumber>
+        <namespace>DataSync</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
         <minorNumber>4</minorNumber>
         <namespace>DupeDive</namespace>
     </packageVersions>
@@ -17,8 +22,23 @@
     </packageVersions>
     <packageVersions>
         <majorNumber>1</majorNumber>
+        <minorNumber>2</minorNumber>
+        <namespace>computerprofile</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>8</majorNumber>
+        <minorNumber>8</minorNumber>
+        <namespace>copado</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
         <minorNumber>7</minorNumber>
         <namespace>muw</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>18</minorNumber>
+        <namespace>mvc</namespace>
     </packageVersions>
     <packageVersions>
         <majorNumber>1</majorNumber>
@@ -34,6 +54,11 @@
         <majorNumber>1</majorNumber>
         <minorNumber>48</minorNumber>
         <namespace>skyvvasolutions</namespace>
+    </packageVersions>
+    <packageVersions>
+        <majorNumber>1</majorNumber>
+        <minorNumber>42</minorNumber>
+        <namespace>soco</namespace>
     </packageVersions>
     <packageVersions>
         <majorNumber>1</majorNumber>
