@@ -44,7 +44,7 @@
     </fieldUpdates>
     <outboundMessages>
         <fullName>Account_Msg</fullName>
-        <apiVersion>22.0</apiVersion>
+        <apiVersion>40.0</apiVersion>
         <endpointUrl>http://80.65.129.80:80/SFOM2EVNMP_Connector/</endpointUrl>
         <fields>Id</fields>
         <fields>Name</fields>
@@ -56,7 +56,7 @@
     </outboundMessages>
     <outboundMessages>
         <fullName>Outbound_Msg1</fullName>
-        <apiVersion>8.0</apiVersion>
+        <apiVersion>40.0</apiVersion>
         <endpointUrl>http://80.65.128.7:8081/DART/</endpointUrl>
         <fields>AccountNumber</fields>
         <fields>Active__c</fields>
@@ -109,7 +109,7 @@
     </outboundMessages>
     <outboundMessages>
         <fullName>yp__Transfer_End_Customer</fullName>
-        <apiVersion>8.0</apiVersion>
+        <apiVersion>40.0</apiVersion>
         <endpointUrl>http://ypquotes.revion.net/upgrade.php</endpointUrl>
         <fields>Id</fields>
         <includeSessionId>false</includeSessionId>
