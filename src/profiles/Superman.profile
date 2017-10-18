@@ -6365,14 +6365,6 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
-        <apexPage>WS_Navision</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>WS_Tester</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
         <apexPage>WTRACE_LabelPrinter</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
