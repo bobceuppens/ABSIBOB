@@ -19,25 +19,6 @@ public class ContactService {
      */
     public static final string defaultFeed = 'https://www.google.com/m8/feeds/contacts/default/full';
      
-       // Retrieving a photo for a contact
-    @isTest static void getOnePhotoContact() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
- 
-        GoogleData feed = service.getFeed( ContactService.defaultFeed ); 
-        
-        for( xmldom.element e: feed.entries) { 
-            string photoUrl = GoogleData.getRelLink( e, 
-                'http://schemas.google.com/contacts/2008/rel#photo'); 
-            if ( photoUrl != null ) {
-                system.debug( GoogleData.getTitle(e) + 'has a photo ');
-                string photo = service.getPhotoBody(photoUrl ); 
-                system.debug(photo); // binary data for photo
-                return;
-            }   
-        } 
-    }  
-     
     public void insertContact( GoogleData addressbook, Contact con ) { 
         // take data from the contact , create a contact record, insert it
         xmldom.element entry =new xmldom.element('entry');
@@ -151,106 +132,8 @@ public class ContactService {
     static integer debug=3;
     static final string sessionAuthToken = 'CJ3pqczuBBCk0tSrBQ';
         
-    // ContactService.listContacts(); 
-    @isTest static  void listContacts() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        
-        GoogleData feed = service.getFeed( ContactService.defaultFeed ); 
-        feed.dump(); 
-        system.debug( feed.id );
-    } 
-    
-    // add a Contact 
-    // ContactService.addOneContact();
-    @isTest static  void addOneContact() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-                
-        Contact newContact = new Contact( 
-            firstname='B', lastname='Spears', description='Sings for money',
-            email='go@for.broke' ); 
 
-        GoogleData feed = service.getFeed( ContactService.defaultFeed );
-        
-        service.insertContact( feed, newContact );
-        
-    }
-    
-    // 
-    // ContactService.deleteOneContact();
-    @isTest static  void deleteOneContact() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-      
-        GoogleData brits = service.getContactsByTitle( 'Spears' );
-        service.removeContact( brits.entries[0] );
-    }
- 
-    
-    // ContactService.updateOneContact();
-    @isTest static  void updateOneContact() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        
-        GoogleData brits = service.getContactsByTitle( 'Spears' );
-        
-        for (xmldom.element con : brits.entries) { 
-            con.dumpAll(); 
-            con.getElementByTagName('title').nodeValue = 'New Spears';
-            con.getElementByTagName('content').nodeValue = 'Writes Songs';
-            
-            service.updatecontact( con);
-            
-            return;
-        } 
-            
-    }
+
     static string tmpstr = '<?xml version=\'1.0\' encoding=\'UTF-8\'?><entry xmlns=\'http://www.w3.org/2005/Atom\' xmlns:gContact=\'http://schemas.google.com/contact/2008\' xmlns:batch=\'http://schemas.google.com/gdata/batch\' xmlns:gd=\'http://schemas.google.com/g/2005\'><id>http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/base/7656a03108ee72bc</id><updated>2008-06-14T20:24:40.624Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>B Spears</title><content type=\'text\'>Sings for money</content><link rel=\'http://schemas.google.com/contacts/2008/rel#edit-photo\' type=\'image/*\' href=\'http://www.google.com/m8/feeds/photos/media/sforcedemos%40gmail.com/7656a03108ee72bc/1B2M2Y8AsgTpgAmY7PhCfg\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc/1213475080624000\'/><gd:email rel=\'http://schemas.google.com/g/2005#work\' address=\'go@for.broke\'/><gContact:groupMembershipInfo deleted=\'false\' href=\'http://www.google.com/m8/feeds/groups/sforcedemos%40gmail.com/base/284ae66c0fa3829a\'/></entry>';
-    
-    // Retrieving a single contact
-    @isTest static  void getOneContact() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        
-        // to get a single contact you must have stored the self 
-        // link for that contact 
-        GoogleData oneCon = service.getFeed( 
-           'https://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc');
-        oneCon.dump(); 
-    } 
-    
-    @isTest static  void test3() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        service.makePutRequest('sdffd','sdfsdf');
-    } 
-    @isTest static  void test4() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        xmldom tmp = new xmldom(tmpstr);
-        try {       
-        service.insertContact( new GoogleData(tmp), new Contact( 
-            firstname='B', lastname='Spears', description='Sings for money',
-            email='go@for.broke' ));
-            
-        } catch ( exception e) {} 
-    } 
-    @isTest static  void test5() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        xmldom tmp = new xmldom(tmpstr);
-        try {       
-        service.updateContact( tmp.root );
-        } catch ( exception e) {} 
-    } 
-    @isTest static  void test6() {
-        ContactService service = new ContactService();  
-        service.setAuthSubToken(sessionAuthToken); 
-        xmldom tmp = new xmldom(tmpstr);
-        try {       
-        service.removeContact( tmp.root );
-        } catch ( exception e) {} 
-    }               
     
 }

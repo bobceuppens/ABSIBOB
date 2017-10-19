@@ -130,57 +130,5 @@ public class AuthSubUtil {
     /* 
      * test methods below here 
      */
-    static final string sessionAuthToken = 'CJ3pqczuBBCpgI2pBw';
-    
-    @isTest static void testGetTokenInfo() { 
-        system.debug ( AuthSubUtil.getTokenInfo( sessionAuthToken) );
-        system.debug ( AuthSubUtil.getTokenInfo( 'badtoken' ) );
-    }
-    
-    @isTest static void testexchangeForSessionToken() { 
-        CalendarService service = new CalendarService();  
-        AuthSubUtil.exchangeForSessionToken( 'teststtoken' );
-        
-    }
-    
-    @isTest static void testgetTokenFromReply() { 
-        CalendarService service = new CalendarService();  
-        AuthSubUtil.getTokenFromReply( 'url=teststtoken' );
-        AuthSubUtil.getTokenFromReply( 'urlbadteststtoken' );
-    }
-    
-    @isTest static void testrevokeToken() { 
-        CalendarService service = new CalendarService();  
-        AuthSubUtil.revokeToken( 'teststtoken' );
-     
-    }
-    
-    @isTest static void testgetRequestUrl() { 
-        string expected = 'https://www.google.com/accounts/AuthSubRequest?next=https%3A%2F%2Ftapp0.salesforce.com%2F_ui%2Fcore%2Fgoogle%2FGoogleAuthSubCallback%3Furl%3D%252Fapex%252Fgsession%253Fid%253Da0AT0000000FO1QMAW&scope=http://www.google.com/calendar/feeds/&session=1&secure=0';
-        CalendarService service = new CalendarService();  
-        
-        string checkUrl =  AuthSubUtil.getRequestUrl( 'https', 'tapp0.salesforce.com', 
-            '/apex/gsession?id=a0AT0000000FO1QMAW',  // next  
-            'https://www.google.com/calendar/feeds/' );   // scope 
-            
-        system.debug ( expected ) ; 
-        system.debug ( checkUrl );   
-        system.assert(  expected == checkUrl , ' mis match request url '); 
-    }
-    
-
-	@isTest static void  testgetRequestPageReference(){
-    
-        String strProto = 'https';
-        String strHost = 'na2.salesforce.com';
-        String strNextUrl = '/apex/authsub';
-        String strScopeUrl = 'https://spreadsheets.google.com/feeds/';
-              
-       	PageReference p = AuthSubUtil.getRequestPageReference( strProto, strHost, strNextUrl, strScopeUrl);
-      	system.debug (p); 
-    	
-    	STRING expected = 'https://www.google.com/accounts/AuthSubRequest?next=https%3A%2F%2Fna2.salesforce.com%2F_ui%2Fcore%2Fgoogle%2FGoogleAuthSubCallback%3Furl%3D%252Fapex%252Fauthsub&scope=http%3A%2F%2Fspreadsheets.google.com%2Ffeeds%2F&secure=0&session=1';
-    	system.assert( expected == p.getUrl() , 'page reference genreated is bad'); 
-    }
-        
+    static final string sessionAuthToken = 'CJ3pqczuBBCpgI2pBw';      
 }
