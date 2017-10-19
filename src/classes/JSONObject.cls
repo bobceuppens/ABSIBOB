@@ -1475,13 +1475,13 @@ public class JSONTokener {
 	 * TEST Methods to achieve required code coverage
 	 *   many of these could be improved by using assert() instead of debug()
 	 */
-	public static  testmethod void test_tokener_nl() {
+	@isTest static void test_tokener_nl() {
 		//add a new line by inserting /n 
 		JsonObject.JsonTokener tkr = new  JsonTokener(
 		'quoted string foo"');
 		system.debug( 'next string is >'+tkr.nextString('"') );
 	} 
-	public static  testmethod void test_tokener() { 
+	@isTest static void test_tokener() { 
 		JsonObject.JsonTokener tkr = new  JsonTokener('//ff \n{}');
 		tkr.nextClean();
 		tkr = new  JsonTokener('/*fff*/\n{}');
@@ -1494,7 +1494,7 @@ public class JSONTokener {
 			system.assert( ex.getMessage() == 'Unclosed comment');
 		} 
 	}
-	public static  testmethod void test_parsing() { 	JSONObject jj; JsonObject.JsonTokener tkr;
+	@isTest static void test_parsing() { 	JSONObject jj; JsonObject.JsonTokener tkr;
 		string simple = '{"translatedText":  "Ciao mondo"  }';
 		string bool_simple = '{"responseBoolean"  :   true }';
 		string nsimple = '{"responseData"  :   {"translatedText":  "Ciao mondo"  }, "responseDetails": null, "responseStatus": 200 }';

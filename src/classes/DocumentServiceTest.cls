@@ -4,7 +4,7 @@ public class DocumentServiceTest {
     static final string sessionAuthToken = 'CJ3pqczuBBDk2N0S';
     
     // DocumentServiceTest.tup();  
-    public static  testmethod void tup() {
+    @isTest static void tup() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.debug = 0; 
         
@@ -50,7 +50,7 @@ public class DocumentServiceTest {
     } 
     
     // Get a list of documents
-    public static  testmethod void t1() {
+    @isTest static void t1() {
     
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
@@ -63,35 +63,35 @@ public class DocumentServiceTest {
         myDump(documents.feed);*/
         
     }
-    public static  testmethod void t2() {
+    @isTest static void t2() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         system.assert ( service.documentsFeed == 'http://docs.google.com/feeds/documents/private/full/-/document');
         service.getDocumentsFolder('foobar');
     }
-    public static  testmethod void t3() {
+    @isTest static void t3() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsAuthor('foobar');
     }
-    public static  testmethod void t4() {
+    @isTest static void t4() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsTextSearch('foobar');
     }   
 
-    public static  testmethod void t5() {
+    @isTest static void t5() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsStarred();
     }
 
-    public static  testmethod void t6() {
+    @isTest static void t6() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsTitleAndTextSearch('foobar','gack',true);
     }
 
-    public static  testmethod void t7() {
+    @isTest static void t7() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsTitle('foobar');
     }
-    public static  testmethod void t8() {
+    @isTest static void t8() {
         DocumentService service = DocumentServicetest.getTestDocService(); 
         service.getDocumentsTitleExact('foobar');
     }   
@@ -102,7 +102,7 @@ public class DocumentServiceTest {
     }
 
     /* returns 404?
-    public static  testmethod void t9() {
+    @isTest static void t9() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
         string doctitle = 'upload sample.csv';
@@ -114,7 +114,7 @@ public class DocumentServiceTest {
     }*/
 
     //    Retrieving all word processor documents
-    public static  testmethod void t9() {
+    @isTest static void t9() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
         GoogleData documents = service.getFeed ( DocumentService.feedUrl + '-/document' ); 
@@ -122,7 +122,7 @@ public class DocumentServiceTest {
     }
     
     // Retrieving all starred presentations
-    public static  testmethod void t10() {
+    @isTest static void t10() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
         GoogleData documents = service.getFeed ( 
@@ -131,7 +131,7 @@ public class DocumentServiceTest {
     } 
     
     // Retrieving all documents in a named folder
-    public static  testmethod void t11() {
+    @isTest static void t11() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
         GoogleData documents = service.getFeed ( 
@@ -141,7 +141,7 @@ public class DocumentServiceTest {
     }
     
     // Performing a text query
-    public static  testmethod void t12() {
+    @isTest static void t12() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
         GoogleData documents = service.getFeed ( 
@@ -150,7 +150,7 @@ public class DocumentServiceTest {
     }
     
     // DocumentServiceTest.hello_world();  
-   public static  testmethod void hello_world() {
+   @isTest static void hello_world() {
         DocumentService service = new DocumentService();
         service.setAuthSubToken(sessionAuthToken);
       
