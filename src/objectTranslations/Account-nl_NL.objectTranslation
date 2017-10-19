@@ -420,34 +420,6 @@
             <translation>Valide</translation>
         </picklistValues>
     </fields>
-    <fields>
-        <label><!-- Active --></label>
-        <name>yp__Active__c</name>
-    </fields>
-    <fields>
-        <label><!-- Customer Priority --></label>
-        <name>yp__CustomerPriority__c</name>
-    </fields>
-    <fields>
-        <label><!-- Number of Locations --></label>
-        <name>yp__NumberofLocations__c</name>
-    </fields>
-    <fields>
-        <label><!-- SLA Expiration Date --></label>
-        <name>yp__SLAExpirationDate__c</name>
-    </fields>
-    <fields>
-        <label><!-- SLA Serial Number --></label>
-        <name>yp__SLASerialNumber__c</name>
-    </fields>
-    <fields>
-        <label><!-- SLA --></label>
-        <name>yp__SLA__c</name>
-    </fields>
-    <fields>
-        <label><!-- Upsell Opportunity --></label>
-        <name>yp__UpsellOpportunity__c</name>
-    </fields>
     <layouts>
         <layout>Account Layout</layout>
         <sections>

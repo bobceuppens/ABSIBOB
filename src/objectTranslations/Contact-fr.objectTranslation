@@ -249,14 +249,6 @@ A field validation is attached to trigger an error when this field is set to tru
             <translation>Inconnu</translation>
         </picklistValues>
     </fields>
-    <fields>
-        <label><!-- Languages --></label>
-        <name>yp__Languages__c</name>
-    </fields>
-    <fields>
-        <label><!-- Level --></label>
-        <name>yp__Level__c</name>
-    </fields>
     <layouts>
         <layout>Candidate Contact Layout</layout>
         <sections>

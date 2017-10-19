@@ -56,26 +56,6 @@
             <translation>Organisatie</translation>
         </picklistValues>
     </fields>
-    <fields>
-        <label><!-- Current Generator(s) --></label>
-        <name>yp__CurrentGenerators__c</name>
-    </fields>
-    <fields>
-        <label><!-- Number of Locations --></label>
-        <name>yp__NumberofLocations__c</name>
-    </fields>
-    <fields>
-        <label><!-- Primary --></label>
-        <name>yp__Primary__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Interest --></label>
-        <name>yp__ProductInterest__c</name>
-    </fields>
-    <fields>
-        <label><!-- SIC Code --></label>
-        <name>yp__SICCode__c</name>
-    </fields>
     <layouts>
         <layout>Lead Layout</layout>
         <sections>

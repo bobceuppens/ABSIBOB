@@ -1207,48 +1207,6 @@ IMAGE(&quot;/img/icon/people24.png&quot;, &quot;Get Contacts from CFP&quot;), &q
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <fields>
-        <fullName>yp__Languages__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Languages</label>
-        <length>100</length>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>yp__Level__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Level</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Secondary</fullName>
-                    <default>false</default>
-                    <label>Secondary</label>
-                </value>
-                <value>
-                    <fullName>Tertiary</fullName>
-                    <default>false</default>
-                    <label>Tertiary</label>
-                </value>
-                <value>
-                    <fullName>Primary</fullName>
-                    <default>false</default>
-                    <label>Primary</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
     <listViews>
         <fullName>AllContacts</fullName>
         <filterScope>Everything</filterScope>
@@ -1357,21 +1315,6 @@ IMAGE(&quot;/img/icon/people24.png&quot;, &quot;Get Contacts from CFP&quot;), &q
                 <default>false</default>
             </values>
         </picklistValues>
-        <picklistValues>
-            <picklist>yp__Level__c</picklist>
-            <values>
-                <fullName>Primary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Secondary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tertiary</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
     </recordTypes>
     <recordTypes>
         <fullName>Standard_Contact</fullName>
@@ -1436,21 +1379,6 @@ IMAGE(&quot;/img/icon/people24.png&quot;, &quot;Get Contacts from CFP&quot;), &q
             </values>
             <values>
                 <fullName>Prof%2E</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>yp__Level__c</picklist>
-            <values>
-                <fullName>Primary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Secondary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Tertiary</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
