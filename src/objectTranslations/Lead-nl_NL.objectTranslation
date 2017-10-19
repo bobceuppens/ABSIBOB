@@ -67,30 +67,10 @@
     <fields>
         <label><!-- Primary --></label>
         <name>yp__Primary__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Product Interest --></label>
         <name>yp__ProductInterest__c</name>
-        <picklistValues>
-            <masterLabel>GC1000 series</masterLabel>
-            <translation><!-- GC1000 series --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>GC3000 series</masterLabel>
-            <translation><!-- GC3000 series --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>GC5000 series</masterLabel>
-            <translation><!-- GC5000 series --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- SIC Code --></label>

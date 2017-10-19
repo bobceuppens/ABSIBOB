@@ -119,7 +119,7 @@ public class BloggerService {
      
     //bloggerServieTest
     static final string sessionAuthToken = 'CJ3pqczuBBD5wJOG______8B';
-    public static testMethod  void oneblog() {
+    @isTest static  void oneblog() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
         
@@ -132,7 +132,7 @@ public class BloggerService {
         system.debug( posts.entries[0].getValue('content') );
     }
     
-    public static testMethod  void allblogs() {
+    @isTest static  void allblogs() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
         
@@ -155,7 +155,7 @@ public class BloggerService {
     }  
     
     //  Publishing a Google blog post
-    public static testMethod  void publishBlogPost() {
+    @isTest static  void publishBlogPost() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
 
@@ -173,7 +173,7 @@ public class BloggerService {
     }
 
      // Creating a draft Google blog post
-    public static testMethod  void publishDraftBlogPost() {
+    @isTest static  void publishDraftBlogPost() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
 
@@ -191,7 +191,7 @@ public class BloggerService {
         service.insertEntry(oneBlog, atom ); 
     }    
        
-    public static testMethod  void getFeedQuery() {
+    @isTest static  void getFeedQuery() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
 
@@ -199,7 +199,7 @@ public class BloggerService {
         oneBlog.dump(); 
     }
     
-    public static testMethod  void testMakeblogelement() {
+    @isTest static  void testMakeblogelement() {
         BloggerService service = new BloggerService();  
         service.setAuthSubToken(sessionAuthToken);  
         

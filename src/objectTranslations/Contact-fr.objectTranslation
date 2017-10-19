@@ -256,18 +256,6 @@ A field validation is attached to trigger an error when this field is set to tru
     <fields>
         <label><!-- Level --></label>
         <name>yp__Level__c</name>
-        <picklistValues>
-            <masterLabel>Primary</masterLabel>
-            <translation><!-- Primary --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Secondary</masterLabel>
-            <translation><!-- Secondary --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Tertiary</masterLabel>
-            <translation><!-- Tertiary --></translation>
-        </picklistValues>
     </fields>
     <layouts>
         <layout>Candidate Contact Layout</layout>
