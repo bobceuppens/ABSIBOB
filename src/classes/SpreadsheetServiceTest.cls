@@ -3,14 +3,14 @@ public class SpreadsheetServiceTest {
     static integer debug=3;
     static final string sessionAuthToken = 'CJ3pqczuBBCl1K_p_P____8B';
 
-    @isTest static  void testtitle() {
+    public static testMethod  void testtitle() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         service.getSpreadsheetsTitleExact('didtitle');     
     }
     
     // SpreadsheetServiceTest.test_worksheet_based_feed();
-    @isTest static  void test_worksheet_based_feed() {
+    public static testMethod  void test_worksheet_based_feed() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('account');
@@ -29,7 +29,7 @@ public class SpreadsheetServiceTest {
     }
     
     //  Update the metadata of a worksheet
-    @isTest static  void test_metadataofaworksheet() {
+    public static testMethod  void test_metadataofaworksheet() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('account');
@@ -47,7 +47,7 @@ public class SpreadsheetServiceTest {
     }
     
     //  Get a list-based feed
-    @isTest static  void test_getListbasedfeed() {
+    public static testMethod  void test_getListbasedfeed() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('account');
@@ -68,7 +68,7 @@ public class SpreadsheetServiceTest {
     // SpreadsheetServiceTest.test_addRowListFeed();
     //  Add a row
     // list feeds are tricky, be sure to use lowercase in your gsx names
-   	@isTest static  void test_addRowListFeed() {
+   	public static testMethod  void test_addRowListFeed() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('contact');
@@ -105,7 +105,7 @@ public class SpreadsheetServiceTest {
     
     //  Edit a row
     // SpreadsheetServiceTest.test_editRowListFeed();
-   	@isTest static  void test_editRowListFeed() {
+   	public static testMethod  void test_editRowListFeed() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('contact');
@@ -131,7 +131,7 @@ public class SpreadsheetServiceTest {
     
     // remove a row
     // service.removeRow( onerow ); 
-   	@isTest static  void test_removeRowListFeed() {
+   	public static testMethod  void test_removeRowListFeed() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('account');
@@ -155,7 +155,7 @@ public class SpreadsheetServiceTest {
     
     
     //  Reverse-sort rows
-    @isTest static  void test_getListbasedfeedReverse() {
+    public static testMethod  void test_getListbasedfeedReverse() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getSpreadsheetsTitle('account');
@@ -174,7 +174,7 @@ public class SpreadsheetServiceTest {
     }    
     
     //  Add a worksheet
-    @isTest static  void test_addasheet() {
+    public static testMethod  void test_addasheet() {
    		SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -209,7 +209,7 @@ public class SpreadsheetServiceTest {
      * clear out one row, write those cells back
      */ 
 	// SpreadsheetServiceTest.testUpdateCellsByBatch();
-    @isTest static  void testUpdateCellsByBatch() {
+    public static testMethod  void testUpdateCellsByBatch() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         system.debug( service.spreadsheetsfeed );
@@ -241,7 +241,7 @@ public class SpreadsheetServiceTest {
     }  
 
 	// SpreadsheetServiceTest.test_clearRow();
- 	@isTest static  void test_clearRow() {
+ 	public static testMethod  void test_clearRow() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
       	
@@ -273,7 +273,7 @@ public class SpreadsheetServiceTest {
  	
     // Cells batch update of several rows using Apex SOQL query()
     // SpreadsheetServiceTest.test_updateFromQuery(); 
-    @isTest static  void test_updateFromQuery() {
+    public static testMethod  void test_updateFromQuery() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
    
@@ -316,7 +316,7 @@ public class SpreadsheetServiceTest {
         
     }
 
-    @isTest static  void test_getMatchingTitle() {
+    public static testMethod  void test_getMatchingTitle() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
         service.debug = 2; 
@@ -325,7 +325,7 @@ public class SpreadsheetServiceTest {
     }
     static string accountSheetTest = 
     '<?xml version=\'1.0\' encoding=\'UTF-8\'?><feed xmlns=\'http://www.w3.org/2005/Atom\' xmlns:openSearch=\'http://a9.com/-/spec/opensearchrss/1.0/\'><id>http://spreadsheets.google.com/feeds/spreadsheets/private/full</id><updated>2008-06-10T02:28:13.486Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#spreadsheet\'/><title type=\'text\'>Available Spreadsheets - sforcedemos@gmail.com</title><link rel=\'alternate\' type=\'text/html\' href=\'http://docs.google.com\'/><link rel=\'http://schemas.google.com/g/2005#feed\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/spreadsheets/private/full\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/spreadsheets/private/full?title=accoun&amp;tfe=\'/><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>http://spreadsheets.google.com/feeds/spreadsheets/private/full/o12612000142644651407.6804866143906912412</id><updated>2008-06-08T02:18:19.389Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#spreadsheet\'/><title type=\'text\'>Account Summary</title><content type=\'text\'>Account Summary</content><link rel=\'http://schemas.google.com/spreadsheets/2006#worksheetsfeed\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/worksheets/o12612000142644651407.6804866143906912412/private/full\'/><link rel=\'alternate\' type=\'text/html\' href=\'http://spreadsheets.google.com/ccc?key=o12612000142644651407.6804866143906912412\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/spreadsheets/private/full/o12612000142644651407.6804866143906912412\'/><author><name>sforcedemos</name><email>sforcedemos@gmail.com</email></author></entry></feed>';
-    @isTest static  void test_getWorksheetFeedUrl() {
+    public static testMethod  void test_getWorksheetFeedUrl() {
         GoogleData d = new GoogleData(new xmldom(accountSheetTest)) ;
         SpreadsheetService service = new SpreadsheetService();  
         system.debug( SpreadsheetService.getWorksheetFeedUrl(d.feed) );
@@ -340,7 +340,7 @@ public class SpreadsheetServiceTest {
     '<?xml version=\'1.0\' encoding=\'UTF-8\'?><feed xmlns=\'http://www.w3.org/2005/Atom\' xmlns:openSearch=\'http://a9.com/-/spec/opensearchrss/1.0/\' xmlns:gs=\'http://schemas.google.com/spreadsheets/2006\' xmlns:batch=\'http://schemas.google.com/gdata/batch\'><id>http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full</id><updated>2008-06-10T02:30:39.590Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#cell\'/><title type=\'text\'>Sheet1</title><link rel=\'alternate\' type=\'text/html\' href=\'http://spreadsheets.google.com/ccc?key=o12612000142644651407.6804866143906912412\'/><link rel=\'http://schemas.google.com/g/2005#feed\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full\'/><link rel=\'http://schemas.google.com/g/2005#post\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full\'/><link rel=\'http://schemas.google.com/g/2005#batch\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/batch\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full?range=A1%3AB2&amp;return-empty=true\'/><author><name>sforcedemos</name><email>sforcedemos@gmail.com</email></author><openSearch:totalResults>4</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><gs:rowCount>68</gs:rowCount><gs:colCount>20</gs:colCount><entry><id>http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C1</id><updated>2008-06-10T02:30:39.590Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#cell\'/><title type=\'text\'>A1</title><content type=\'text\'>contact id</content><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C1\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C1/2b8qvv\'/><gs:cell row=\'1\' col=\'1\' inputValue=\'contact id\'>contact id</gs:cell></entry><entry><id>http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C2</id><updated>2008-06-10T02:30:39.590Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#cell\'/><title type=\'text\'>B1</title><content type=\'text\'>First name</content><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C2\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R1C2/t2drff\'/><gs:cell row=\'1\' col=\'2\' inputValue=\'First name\'>First name</gs:cell></entry><entry><id>http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C1</id><updated>2008-06-10T02:30:39.590Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#cell\'/><title type=\'text\'>A2</title><content type=\'text\'>003T0000005liESIAY</content><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C1\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C1/y04gv6\'/><gs:cell row=\'2\' col=\'1\' inputValue=\'003T0000005liESIAY\'>003T0000005liESIAY</gs:cell></entry><entry><id>http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C2</id><updated>2008-06-10T02:30:39.590Z</updated><category scheme=\'http://schemas.google.com/spreadsheets/2006\' term=\'http://schemas.google.com/spreadsheets/2006#cell\'/><title type=\'text\'>B2</title><content type=\'text\'>Rose</content><link rel=\'self\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C2\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://spreadsheets.google.com/feeds/cells/o12612000142644651407.6804866143906912412/od6/private/full/R2C2/h7ecv\'/><gs:cell row=\'2\' col=\'2\' inputValue=\'Rose\'>Rose</gs:cell></entry></feed>';
     
 
-    @isTest static  void test_updateCellsAgain() {
+    public static testMethod  void test_updateCellsAgain() {
     	xmldom dd = new xmldom(cellfeedtest);
     	dd.dumpAll();
         GoogleData d = new GoogleData(dd) ;
@@ -358,7 +358,7 @@ public class SpreadsheetServiceTest {
     }
     
     // SpreadsheetServiceTest.test_updateCel();
-    @isTest static  void test_updateCel() {
+    public static testMethod  void test_updateCel() {
         GoogleData d = new GoogleData(new xmldom(cellfeedtest)) ;
         
         list<GoogleData.Worksheet> worksheets = 
@@ -378,7 +378,7 @@ public class SpreadsheetServiceTest {
         }
         service.updateCell( ws, cells[0] ); 
     }
-    @isTest static  void test_updateCells() {
+    public static testMethod  void test_updateCells() {
         GoogleData d = new GoogleData(new xmldom(cellfeedtest)) ;
         list<GoogleData.Worksheet> worksheets = 
             GoogleData.WorksheetFactory(d.getEntries());
@@ -390,7 +390,7 @@ public class SpreadsheetServiceTest {
         service.debug = 0;  
         service.updateCells( wrkSheet); 
     }
-    @isTest static  void test_getFeedRange() {
+    public static testMethod  void test_getFeedRange() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
         service.debug = 0;  
@@ -398,7 +398,7 @@ public class SpreadsheetServiceTest {
     }
     
     // SpreadsheetServiceTest.getCellsLatest(); 
-    @isTest static  void getCellsLatest() {
+    public static testMethod  void getCellsLatest() {
        SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
       	
@@ -423,7 +423,7 @@ public class SpreadsheetServiceTest {
     //Worksheet metafeed
     // test in execute anon window with 
     // SpreadsheetServiceTest.test_spreadsheet_worksheet_dump_with_CellUpdate(); 
-    @isTest static  void test_spreadsheet_worksheet_dump_with_CellUpdate() {
+    public static testMethod  void test_spreadsheet_worksheet_dump_with_CellUpdate() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
         service.debug = 0;  
@@ -520,7 +520,7 @@ public class SpreadsheetServiceTest {
     /* title    Specifies the search terms for the title of a document.     
        title-exact Specifies whether the title query should be taken as an exact string.
     */  
-    @isTest static  void test_getSheetsMatchingByTitle() {
+    public static testMethod  void test_getSheetsMatchingByTitle() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
             
@@ -532,7 +532,7 @@ public class SpreadsheetServiceTest {
  
     }
 
-    @isTest static  void test_listAllSheetsandDump() {
+    public static testMethod  void test_listAllSheetsandDump() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
         
@@ -564,7 +564,7 @@ public class SpreadsheetServiceTest {
 	static GoogleData fakeresult = new GoogleData( new xmldom( allSheetsTestFeed )) ;
     
     //Get a list of spreadsheets
-    @isTest static  void test_listAllSpreadsheets() {
+    public static testMethod  void test_listAllSpreadsheets() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken);
         service.debug = 3;
@@ -572,7 +572,7 @@ public class SpreadsheetServiceTest {
         sheets.dump(); 
     }   
     
-    @isTest static  void test_worksheet_based_feedfake() {
+    public static testMethod  void test_worksheet_based_feedfake() {
         SpreadsheetService service = new SpreadsheetService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom.element oneSpreadSheet = fakeresult.entries[0]; // expects one spreadsheet

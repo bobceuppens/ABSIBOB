@@ -75,7 +75,7 @@ public without sharing class User_SwitchProfile {
         return initializeView();
     }
     
-    @isTest static void testCoverageView() {
+    public static testmethod void testCoverageView() {
         // Note from Ian: 
         //
         // This is demo code, so I'm not going to bother writing any real unit tests for this thing.
@@ -93,7 +93,7 @@ public without sharing class User_SwitchProfile {
         system.assert(true, 'system.assert(true) != true ?');
     }
     
-    @isTest static void testCoverageUpdate() {
+    public static testmethod void testCoverageUpdate() {
         // Run the update code
         ApexPages.currentPage().getParameters().put('userId', UserInfo.getUserId());
         ApexPages.currentPage().getParameters().put('profileId', UserInfo.getProfileId());
