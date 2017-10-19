@@ -20,9 +20,6 @@
     <tab>SDU_Project__c</tab>
     <tab>Tram__c</tab>
     <tab>Tramstation__c</tab>
-    <tab>Sleuth_Configurations</tab>
-    <tab>Contact_Duplicates</tab>
-    <tab>Account_Dup_Status</tab>
     <tab>test</tab>
     <tab>Vehicle__c</tab>
     <tab>Shipment__c</tab>
