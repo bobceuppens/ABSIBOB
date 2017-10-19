@@ -153,13 +153,13 @@ global with sharing class XmlWriterDemo  {
     }   
     
     /*
-    @isTest static void basicTest() {
+    public static TestMethod void basicTest() {
           String result = XmlWriterDemo.getRavisXml();
           System.debug(' ################## ' + 'result: ' + result + ' ################');
     }
     */
     
-    @isTest static void NMPTest() {
+    public static TestMethod void NMPTest() {
           Map<String,String> NMPValues = new Map<String, String>();
           NMPValues.put('firstname','bob');
           String result = XmlWriterDemo.buildXML2(NMPValues,'bob@absi.be','EdX7CqkmjQtW8SA9MOPQLsLSLEwJb961iUrde602XcTZKNI','540CCCFCB0040540','15033');

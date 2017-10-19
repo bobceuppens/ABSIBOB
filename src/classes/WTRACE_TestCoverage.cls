@@ -22,7 +22,7 @@
 @isTest(SeeAllData=true)
 public with sharing class WTRACE_TestCoverage {
   
-    @isTest static void XMLTest() {
+    public static TestMethod void XMLTest() {
 
       WTRC_Shipment__c myShipment = new WTRC_Shipment__c();
 /*      

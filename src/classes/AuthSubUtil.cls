@@ -132,30 +132,30 @@ public class AuthSubUtil {
      */
     static final string sessionAuthToken = 'CJ3pqczuBBCpgI2pBw';
     
-    @isTest static void testGetTokenInfo() { 
+    public static testMethod void testGetTokenInfo() { 
         system.debug ( AuthSubUtil.getTokenInfo( sessionAuthToken) );
         system.debug ( AuthSubUtil.getTokenInfo( 'badtoken' ) );
     }
     
-    @isTest static void testexchangeForSessionToken() { 
+    public static testMethod void testexchangeForSessionToken() { 
         CalendarService service = new CalendarService();  
         AuthSubUtil.exchangeForSessionToken( 'teststtoken' );
         
     }
     
-    @isTest static void testgetTokenFromReply() { 
+    public static testMethod void testgetTokenFromReply() { 
         CalendarService service = new CalendarService();  
         AuthSubUtil.getTokenFromReply( 'url=teststtoken' );
         AuthSubUtil.getTokenFromReply( 'urlbadteststtoken' );
     }
     
-    @isTest static void testrevokeToken() { 
+    public static testMethod void testrevokeToken() { 
         CalendarService service = new CalendarService();  
         AuthSubUtil.revokeToken( 'teststtoken' );
      
     }
     
-    @isTest static void testgetRequestUrl() { 
+    public static testMethod void testgetRequestUrl() { 
         string expected = 'https://www.google.com/accounts/AuthSubRequest?next=https%3A%2F%2Ftapp0.salesforce.com%2F_ui%2Fcore%2Fgoogle%2FGoogleAuthSubCallback%3Furl%3D%252Fapex%252Fgsession%253Fid%253Da0AT0000000FO1QMAW&scope=http://www.google.com/calendar/feeds/&session=1&secure=0';
         CalendarService service = new CalendarService();  
         
@@ -169,7 +169,7 @@ public class AuthSubUtil {
     }
     
 
-	@isTest static void  testgetRequestPageReference(){
+	public static testMethod void  testgetRequestPageReference(){
     
         String strProto = 'https';
         String strHost = 'na2.salesforce.com';

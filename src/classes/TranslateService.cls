@@ -123,7 +123,7 @@ public class TranslateService {
  	 * test methods below here
  	 */
  	
- 	@isTest static void t5() { 
+ 	public static testMethod void t5() { 
  		TranslateService s = new TranslateService();
  		s.debug = 3;
  		string ss = 'Edge, founded in 1998, is a start-up based in Austin, TX. The company designs and manufactures a device to convert music from one digital format to another. Edge sells its product through retailers and its own website.';
@@ -135,7 +135,7 @@ public class TranslateService {
     	system.debug( s.responseDetails ); 
  	}
  	
- 	@isTest static void t4() { 
+ 	public static testMethod void t4() { 
  		TranslateService s = new TranslateService();
  		s.debug = 3;
  		s.parseResponse('{"responseData"  :   {"translatedText":  "Ciao mondo"  }, "responseDetails": null, "responseStatus": 200 }');
@@ -144,7 +144,7 @@ public class TranslateService {
     	system.assert( s.responseDetails == null); 
  	}
   	
-  	@isTest static void t3() { 
+  	public static testMethod void t3() { 
         TranslateService s = new TranslateService();
         s.debug = 3;
         s.translate('This is important','en|xx'); // should error
@@ -158,7 +158,7 @@ public class TranslateService {
     	
     } 
     
-    @isTest static void t2() { 
+    public static testMethod void t2() { 
         TranslateService s = new TranslateService();
         s.translate('This is important','en|it');
        	
@@ -167,7 +167,7 @@ public class TranslateService {
     	system.debug( s.responseDetails ); // null is ok	
     }    
     
-    @isTest static void t1() { 
+    public static testMethod void t1() { 
         TranslateService s = new TranslateService();
         
         googledata t = s.getFeed('http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&q=hello%20world&langpair=en%7Cit' );

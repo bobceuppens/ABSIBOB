@@ -152,7 +152,7 @@ public class ContactService {
     static final string sessionAuthToken = 'CJ3pqczuBBCk0tSrBQ';
         
     // ContactService.listContacts(); 
-    @isTest static  void listContacts() {
+    public static testMethod  void listContacts() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -163,7 +163,7 @@ public class ContactService {
     
     // add a Contact 
     // ContactService.addOneContact();
-    @isTest static  void addOneContact() {
+    public static testMethod  void addOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
                 
@@ -179,7 +179,7 @@ public class ContactService {
     
     // 
     // ContactService.deleteOneContact();
-    @isTest static  void deleteOneContact() {
+    public static testMethod  void deleteOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
       
@@ -189,7 +189,7 @@ public class ContactService {
  
     
     // ContactService.updateOneContact();
-    @isTest static  void updateOneContact() {
+    public static testMethod  void updateOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -209,7 +209,7 @@ public class ContactService {
     static string tmpstr = '<?xml version=\'1.0\' encoding=\'UTF-8\'?><entry xmlns=\'http://www.w3.org/2005/Atom\' xmlns:gContact=\'http://schemas.google.com/contact/2008\' xmlns:batch=\'http://schemas.google.com/gdata/batch\' xmlns:gd=\'http://schemas.google.com/g/2005\'><id>http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/base/7656a03108ee72bc</id><updated>2008-06-14T20:24:40.624Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>B Spears</title><content type=\'text\'>Sings for money</content><link rel=\'http://schemas.google.com/contacts/2008/rel#edit-photo\' type=\'image/*\' href=\'http://www.google.com/m8/feeds/photos/media/sforcedemos%40gmail.com/7656a03108ee72bc/1B2M2Y8AsgTpgAmY7PhCfg\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc/1213475080624000\'/><gd:email rel=\'http://schemas.google.com/g/2005#work\' address=\'go@for.broke\'/><gContact:groupMembershipInfo deleted=\'false\' href=\'http://www.google.com/m8/feeds/groups/sforcedemos%40gmail.com/base/284ae66c0fa3829a\'/></entry>';
     
     // Retrieving a single contact
-    @isTest static  void getOneContact() {
+    public static testMethod  void getOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -220,12 +220,12 @@ public class ContactService {
         oneCon.dump(); 
     } 
     
-    @isTest static  void test3() {
+    public static testMethod  void test3() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         service.makePutRequest('sdffd','sdfsdf');
     } 
-    @isTest static  void test4() {
+    public static testMethod  void test4() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);
@@ -236,7 +236,7 @@ public class ContactService {
             
         } catch ( exception e) {} 
     } 
-    @isTest static  void test5() {
+    public static testMethod  void test5() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);
@@ -244,7 +244,7 @@ public class ContactService {
         service.updateContact( tmp.root );
         } catch ( exception e) {} 
     } 
-    @isTest static  void test6() {
+    public static testMethod  void test6() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);

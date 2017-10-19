@@ -21,7 +21,7 @@
  */
 @isTest(SeeAllData=true)
 public with sharing class TestCoverage {
-      @isTest static void XMLTest() {
+      public static TestMethod void XMLTest() {
         Id userId = '00580000001d8FZ';
         User myUser = [SELECT Id FROM user WHERE Id=:userId];
         Schema.PicklistEntry[] pes = Schema.SObjectType.User.fields.LocaleSidKey.PicklistValues;
