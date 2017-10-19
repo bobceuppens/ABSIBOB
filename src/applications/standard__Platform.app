@@ -9,7 +9,6 @@
     <tab>standard-Dashboard</tab>
     <tab>Item__c</tab>
     <tab>Serial_NR</tab>
-    <tab>TimeSheet_mgmt</tab>
     <tab>WTRC_Shipment__c</tab>
     <tab>Flex</tab>
     <tab>SOQL</tab>
