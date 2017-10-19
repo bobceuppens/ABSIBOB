@@ -74,34 +74,4 @@ public without sharing class User_SwitchProfile {
         
         return initializeView();
     }
-    
-    @isTest static void testCoverageView() {
-        // Note from Ian: 
-        //
-        // This is demo code, so I'm not going to bother writing any real unit tests for this thing.
-        
-        User_SwitchProfile u = new User_SwitchProfile();
-        u.debug = true;
-        u.initialize();
-        u.initializeView();
-        
-        ApexPages.currentPage().getParameters().put('profileId', UserInfo.getProfileId());
-        
-        u.selectProfile();
-        
-        // Because SF wants me to...
-        system.assert(true, 'system.assert(true) != true ?');
-    }
-    
-    @isTest static void testCoverageUpdate() {
-        // Run the update code
-        ApexPages.currentPage().getParameters().put('userId', UserInfo.getUserId());
-        ApexPages.currentPage().getParameters().put('profileId', UserInfo.getProfileId());
-        
-        User_SwitchProfile u = new User_SwitchProfile();
-        u.initializeUpdate();
-        
-        // Because SF wants me to...
-        system.assert(true, 'system.assert(true) != true ?');
-    }
 }

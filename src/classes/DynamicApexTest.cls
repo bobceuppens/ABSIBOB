@@ -1,3 +1,4 @@
+@isTest
 public class DynamicApexTest {
 
     public static void descObj() {

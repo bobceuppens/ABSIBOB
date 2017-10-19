@@ -1,6 +1,5 @@
 public class AuthSubController {
-    
-    public pagereference exchangeRequestToken() {
+        public pagereference exchangeRequestToken() {
         if ( ApexPages.currentPage().getParameters().get('token') != null) { 
             string sessToken = 
              AuthSubUtil.exchangeForSessionToken( 
@@ -19,27 +18,5 @@ public class AuthSubController {
     public boolean getRequestToken() {
         return (ApexPages.currentPage().getParameters().get('token') == null
         && ApexPages.currentPage().getParameters().get('id') != null);
-    }
-    
-    @isTest static void t1() {   
-   
-        PageReference pageRef = Page.authsub;
-        Test.setCurrentPage(pageRef);
-  
-        AuthSubController stc = new AuthSubController( );
-        ApexPages.currentPage().getParameters().put('token', 'yyyy');
-        ApexPages.currentPage().getParameters().put('id', 'yyyy');
-        stc.exchangeRequestToken();
-        stc.getRequestToken();
-    }
-     @isTest static void t2() {   
-   
-        PageReference pageRef = Page.authsub;
-        Test.setCurrentPage(pageRef);
-  
-        AuthSubController stc = new AuthSubController( );
-        stc.getRequestToken();
-        stc.exchangeRequestToken();
-        
     }
 }

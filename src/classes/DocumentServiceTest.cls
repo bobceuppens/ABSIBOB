@@ -1,3 +1,4 @@
+@isTest
 public class DocumentServiceTest {
  
     static integer debug=3;

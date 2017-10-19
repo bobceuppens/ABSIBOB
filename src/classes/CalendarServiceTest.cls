@@ -1,3 +1,4 @@
+@isTest
 public class CalendarServiceTest {
 
     static integer debug=3;
