@@ -1,7 +1,7 @@
 @isTest(SeeAllData=true)
 public with sharing class WTRC_Test {
 	
-    public static TestMethod void XMLTest() {
+    @isTest static void XMLTest() {
 
     	WTRC_Shipment__c myShipment = new WTRC_Shipment__c();
 /*    	

@@ -20,7 +20,7 @@ public class ContactService {
     public static final string defaultFeed = 'https://www.google.com/m8/feeds/contacts/default/full';
      
        // Retrieving a photo for a contact
-    public static testMethod  void getOnePhotoContact() {
+    @isTest static void getOnePhotoContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
  
@@ -152,7 +152,7 @@ public class ContactService {
     static final string sessionAuthToken = 'CJ3pqczuBBCk0tSrBQ';
         
     // ContactService.listContacts(); 
-    public static testMethod  void listContacts() {
+    @isTest static  void listContacts() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -163,7 +163,7 @@ public class ContactService {
     
     // add a Contact 
     // ContactService.addOneContact();
-    public static testMethod  void addOneContact() {
+    @isTest static  void addOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
                 
@@ -179,7 +179,7 @@ public class ContactService {
     
     // 
     // ContactService.deleteOneContact();
-    public static testMethod  void deleteOneContact() {
+    @isTest static  void deleteOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
       
@@ -189,7 +189,7 @@ public class ContactService {
  
     
     // ContactService.updateOneContact();
-    public static testMethod  void updateOneContact() {
+    @isTest static  void updateOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -209,7 +209,7 @@ public class ContactService {
     static string tmpstr = '<?xml version=\'1.0\' encoding=\'UTF-8\'?><entry xmlns=\'http://www.w3.org/2005/Atom\' xmlns:gContact=\'http://schemas.google.com/contact/2008\' xmlns:batch=\'http://schemas.google.com/gdata/batch\' xmlns:gd=\'http://schemas.google.com/g/2005\'><id>http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/base/7656a03108ee72bc</id><updated>2008-06-14T20:24:40.624Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>B Spears</title><content type=\'text\'>Sings for money</content><link rel=\'http://schemas.google.com/contacts/2008/rel#edit-photo\' type=\'image/*\' href=\'http://www.google.com/m8/feeds/photos/media/sforcedemos%40gmail.com/7656a03108ee72bc/1B2M2Y8AsgTpgAmY7PhCfg\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/7656a03108ee72bc/1213475080624000\'/><gd:email rel=\'http://schemas.google.com/g/2005#work\' address=\'go@for.broke\'/><gContact:groupMembershipInfo deleted=\'false\' href=\'http://www.google.com/m8/feeds/groups/sforcedemos%40gmail.com/base/284ae66c0fa3829a\'/></entry>';
     
     // Retrieving a single contact
-    public static testMethod  void getOneContact() {
+    @isTest static  void getOneContact() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -220,12 +220,12 @@ public class ContactService {
         oneCon.dump(); 
     } 
     
-    public static testMethod  void test3() {
+    @isTest static  void test3() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         service.makePutRequest('sdffd','sdfsdf');
     } 
-    public static testMethod  void test4() {
+    @isTest static  void test4() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);
@@ -236,7 +236,7 @@ public class ContactService {
             
         } catch ( exception e) {} 
     } 
-    public static testMethod  void test5() {
+    @isTest static  void test5() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);
@@ -244,7 +244,7 @@ public class ContactService {
         service.updateContact( tmp.root );
         } catch ( exception e) {} 
     } 
-    public static testMethod  void test6() {
+    @isTest static  void test6() {
         ContactService service = new ContactService();  
         service.setAuthSubToken(sessionAuthToken); 
         xmldom tmp = new xmldom(tmpstr);

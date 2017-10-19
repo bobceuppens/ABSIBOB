@@ -109,7 +109,7 @@ public class SuperSort {
     }
     
     /*Some test methods that provide 100% coverage */
-    public static testMethod void sortAscendingTest(){
+    @isTest static void sortAscendingTest(){
         
         List<Opportunity> opps = new List<Opportunity>();
         for(integer i = 0; i<1000; i++){
@@ -131,7 +131,7 @@ public class SuperSort {
         }  
     }
     
-    public static testMethod void sortDescendingTest(){
+    @isTest static void sortDescendingTest(){
         
         List<Opportunity> opps = new List<Opportunity>();
         for(integer i = 0; i<1000; i++){

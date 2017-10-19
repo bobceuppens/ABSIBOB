@@ -21,7 +21,7 @@ public class AuthSubController {
         && ApexPages.currentPage().getParameters().get('id') != null);
     }
     
-    public static testMethod void t1() {   
+    @isTest static void t1() {   
    
         PageReference pageRef = Page.authsub;
         Test.setCurrentPage(pageRef);
@@ -32,7 +32,7 @@ public class AuthSubController {
         stc.exchangeRequestToken();
         stc.getRequestToken();
     }
-     public static testMethod void t2() {   
+     @isTest static void t2() {   
    
         PageReference pageRef = Page.authsub;
         Test.setCurrentPage(pageRef);

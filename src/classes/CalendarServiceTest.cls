@@ -3,7 +3,7 @@ public class CalendarServiceTest {
     static integer debug=3;
     static final string sessionAuthToken = 'CJ3pqczuBBCpgI2pBw';
  
-    public static testMethod void updateEvent() { 
+    @isTest static void updateEvent() { 
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         // find an event that contains Tennis
@@ -29,7 +29,7 @@ public class CalendarServiceTest {
         }
     }
     
-    public static testMethod void removeEvent() { 
+    @isTest static void removeEvent() { 
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         // find an event that contains Tennis
@@ -50,7 +50,7 @@ public class CalendarServiceTest {
     
     }
     
-    public static testMethod void insertEvent() { 
+    @isTest static void insertEvent() { 
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getOwnCalendarsFeed();  
@@ -71,7 +71,7 @@ public class CalendarServiceTest {
         entry.dumpAll();  
     }   
     
-    public static testMethod void insertEventMulti() { 
+    @isTest static void insertEventMulti() { 
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData feed = service.getOwnCalendarsFeed();  
@@ -100,7 +100,7 @@ public class CalendarServiceTest {
         entry.dumpAll();  
     }
         
-    public static testMethod  void listCalendars() {
+    @isTest static  void listCalendars() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -108,7 +108,7 @@ public class CalendarServiceTest {
         feed.dump();  // works 
     } 
      
-    public static testMethod  void listown() { 
+    @isTest static  void listown() { 
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -120,7 +120,7 @@ public class CalendarServiceTest {
         system.debug ( 'updated :  ' + cal.updated );
     } 
     
-    public static testMethod  void findTitle() {
+    @isTest static  void findTitle() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -140,7 +140,7 @@ public class CalendarServiceTest {
         cal2.dump();     
     } 
 
-    public static testMethod  void findTitleQuery() {
+    @isTest static  void findTitleQuery() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         string query = EncodingUtil.urlEncode('"Team Demo"','UTF-8' ); 
@@ -148,7 +148,7 @@ public class CalendarServiceTest {
         cal2.dump(); 
     }
 
-    public static testMethod  void eventFeed() {
+    @isTest static  void eventFeed() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -175,7 +175,7 @@ public class CalendarServiceTest {
     } 
  
     // Creating new calendars  
-    public static testMethod  void newCalendar() {
+    @isTest static  void newCalendar() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -187,7 +187,7 @@ public class CalendarServiceTest {
     }
     
     // Deleting calendars
-    public static testMethod  void Deletingcalendars() {
+    @isTest static  void Deletingcalendars() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -202,7 +202,7 @@ public class CalendarServiceTest {
     
     // Updating existing calendars
     // CalendarServiceTest.updatingCalendars() ;
-     public static testMethod  void updatingCalendars() {
+     @isTest static  void updatingCalendars() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -217,7 +217,7 @@ public class CalendarServiceTest {
         service.makePutRequest(gcal.edit, gcal.toXmlString()); 
      }
      
-     public static testMethod  void fakeCalendar() {
+     @isTest static  void fakeCalendar() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -232,7 +232,7 @@ public class CalendarServiceTest {
             ) 
          );
      } 
-     public static testMethod  void testgetEventsRange() {
+     @isTest static  void testgetEventsRange() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         
@@ -241,14 +241,14 @@ public class CalendarServiceTest {
         service.getEventsRange( cal, system.now(), system.now().addhours(3) );
         
      } 
-     public static testMethod  void testremove() {
+     @isTest static  void testremove() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData result = new GoogleData( new xmldom(rawCalendar) );
         GoogleData.Calendar cal = new GoogleData.Calendar( result.entries[0]);
         service.remove( result.entries[0]  );
      } 
-     public static testMethod  void testupdateevent() {
+     @isTest static  void testupdateevent() {
         CalendarService service = new CalendarService();  
         service.setAuthSubToken(sessionAuthToken); 
         GoogleData result = new GoogleData( new xmldom(rawCalendar) );

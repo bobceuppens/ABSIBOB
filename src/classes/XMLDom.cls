@@ -285,7 +285,7 @@ public class XMLDom {
 	
  
  }
- 	public static testmethod void test0() { xmldom d;  
+ 	@isTest static void test0() { xmldom d;  
  		// truncated xml
  		d = new xmldom('<books><book author="Manoj" date="1999" >My Book</book><book author="Ron" >Your '); 
         system.assert( d.root != null);
@@ -297,7 +297,7 @@ public class XMLDom {
  		system.assert( p == null );
  	} 
   	
-  	public static testmethod void test1() { 
+  	@isTest static void test1() { 
         xmldom d;        
         d = new xmldom('<book  author="Manoj" >My Book</book>');
         d.dumpAll(); 
@@ -348,7 +348,7 @@ public class XMLDom {
     }
     
 
-    public static testmethod void test3() { 
+    @isTest static void test3() { 
          string testNotification = 
          '<?xml version="1.0" encoding="UTF-8"?>' +
             '<bookstore><book><title lang="eng">Harry Potter</title><price>29.99</price>' +
@@ -375,7 +375,7 @@ public class XMLDom {
         system.assertEquals( a.getElementByTagName('bad'), null);       
      }
 
-    public static testmethod void test4() { 
+    @isTest static void test4() { 
     
         String feed =   '<?xml version="1.0" encoding="UTF-8"?>' +
             '<bookstore><book><title lang="eng">Harry Potter</title><entry>v</entry><price>29.99</price>' +
@@ -425,7 +425,7 @@ public class XMLDom {
     /* google data elements have a prefix that is parsed differently, make sure we can 
      * deliver that intact 
      */
-    public static testmethod void testWithPrefix() { 
+    @isTest static void testWithPrefix() { 
         
         String feed = '<?xml version=\'1.0\' encoding=\'UTF-8\'?><feed xmlns=\'http://www.w3.org/2005/Atom\' xmlns:openSearch=\'http://a9.com/-/spec/opensearchrss/1.0/\' xmlns:gCal=\'http://schemas.google.com/gCal/2005\' xmlns:gd=\'http://schemas.google.com/g/2005\'><id>http://www.google.com/calendar/feeds/default/allcalendars/full</id><updated>2008-06-11T17:28:38.768Z</updated><title type=\'text\'>Nick Tran\'s Calendar List</title><link rel=\'http://schemas.google.com/g/2005#feed\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/default/allcalendars/full\'/><link rel=\'http://schemas.google.com/g/2005#post\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/default/allcalendars/full\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/default/allcalendars/full\'/><author><name>Nick Tran</name><email>sforcedemos@gmail.com</email></author><generator version=\'1.0\' uri=\'http://www.google.com/calendar\'>Google Calendar</generator><openSearch:startIndex>1</openSearch:startIndex>' + 
         '<entry><id>http://www.google.com/calendar/feeds/default/allcalendars/full/sforcedemos%40gmail.com</id><published>2008-06-11T17:28:38.789Z</published><updated>2008-06-11T14:24:25.000Z</updated><title type=\'text\'>force.com Team Demo</title><link rel=\'alternate\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/sforcedemos%40gmail.com/private/full\'/><link rel=\'http://schemas.google.com/acl/2007#accessControlList\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/sforcedemos%40gmail.com/acl/full\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/default/allcalendars/full/sforcedemos%40gmail.com\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/calendar/feeds/default/allcalendars/full/sforcedemos%40gmail.com\'/><author><name>Nick Tran</name><email>sforcedemos@gmail.com</email></author><gCal:timezone value=\'America/Los_Angeles\'/><gCal:hidden value=\'false\'/>'+ 
