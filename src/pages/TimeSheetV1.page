@@ -7,12 +7,10 @@
                 <apex:column >
                         <apex:facet name="header">Name</apex:facet>
                         <apex:facet name="footer">column footer</apex:facet>
-                        <apex:outputText value="{!account}"/>
                 </apex:column>
                 <apex:column >
                         <apex:facet name="header">Owner</apex:facet>
                         <apex:facet name="footer">column footer</apex:facet>
-                        <apex:outputText value="{!account}"/>
                 </apex:column>
         </apex:dataTable>
 </apex:page>
