@@ -107,17 +107,6 @@
         <protected>false</protected>
         <useDeadLetterQueue>false</useDeadLetterQueue>
     </outboundMessages>
-    <outboundMessages>
-        <fullName>yp__Transfer_End_Customer</fullName>
-        <apiVersion>40.0</apiVersion>
-        <endpointUrl>http://ypquotes.revion.net/upgrade.php</endpointUrl>
-        <fields>Id</fields>
-        <includeSessionId>false</includeSessionId>
-        <integrationUser>bob@absi.be</integrationUser>
-        <name>Transfer End Customer</name>
-        <protected>false</protected>
-        <useDeadLetterQueue>false</useDeadLetterQueue>
-    </outboundMessages>
     <rules>
         <fullName>Account DRM Approved</fullName>
         <actions>
@@ -215,11 +204,5 @@
             <timeLength>30</timeLength>
             <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
         </workflowTimeTriggers>
-    </rules>
-    <rules>
-        <fullName>yp__End Customer Transfer</fullName>
-        <active>false</active>
-        <formula>True</formula>
-        <triggerType>onAllChanges</triggerType>
     </rules>
 </Workflow>

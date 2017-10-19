@@ -154,6 +154,7 @@
         <members>Quotes</members>
         <members>Quotes/Invoice</members>
         <members>Quotes/Quote</members>
+        <members>unfiled$public</members>
         <members>unfiled$public/AcceptanceEmail</members>
         <members>unfiled$public/Account_Integration</members>
         <members>unfiled$public/CommunityChangePasswordEmailTemplate</members>
@@ -280,6 +281,7 @@
         <members>Snapshot_Push_Actions/Usage_Pushes_This_Month_By_Type</members>
         <members>Snapshot_Push_Actions/Usage_of_pushes_this_month_by_week</members>
         <members>Snapshot_Push_Actions/Usage_pushes_this_month_by_week_by_src</members>
+        <members>unfiled$public</members>
         <name>Report</name>
     </types>
     <types>

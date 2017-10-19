@@ -789,7 +789,7 @@
     <recordTypes>
         <fullName>Worktrace_Shipping</fullName>
         <active>true</active>
-        <businessProcess>yp__Opportunity to Quote</businessProcess>
+        <businessProcess>CPM</businessProcess>
         <label>Worktrace Shipping</label>
         <picklistValues>
             <picklist>DeliveryInstallationStatus__c</picklist>

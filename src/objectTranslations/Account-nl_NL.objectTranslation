@@ -423,30 +423,10 @@
     <fields>
         <label><!-- Active --></label>
         <name>yp__Active__c</name>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Customer Priority --></label>
         <name>yp__CustomerPriority__c</name>
-        <picklistValues>
-            <masterLabel>High</masterLabel>
-            <translation><!-- High --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Low</masterLabel>
-            <translation><!-- Low --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Medium</masterLabel>
-            <translation><!-- Medium --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Number of Locations --></label>
@@ -463,38 +443,10 @@
     <fields>
         <label><!-- SLA --></label>
         <name>yp__SLA__c</name>
-        <picklistValues>
-            <masterLabel>Bronze</masterLabel>
-            <translation><!-- Bronze --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Gold</masterLabel>
-            <translation><!-- Gold --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Platinum</masterLabel>
-            <translation><!-- Platinum --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Silver</masterLabel>
-            <translation><!-- Silver --></translation>
-        </picklistValues>
     </fields>
     <fields>
         <label><!-- Upsell Opportunity --></label>
         <name>yp__UpsellOpportunity__c</name>
-        <picklistValues>
-            <masterLabel>Maybe</masterLabel>
-            <translation><!-- Maybe --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>No</masterLabel>
-            <translation><!-- No --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Yes</masterLabel>
-            <translation><!-- Yes --></translation>
-        </picklistValues>
     </fields>
     <layouts>
         <layout>Account Layout</layout>
