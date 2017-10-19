@@ -2,7 +2,7 @@ public class GoogleDataTest {
     static string contactFeedResponse = 
     '<?xml version=\'1.0\' encoding=\'UTF-8\'?><feed xmlns=\'http://www.w3.org/2005/Atom\' xmlns:openSearch=\'http://a9.com/-/spec/opensearchrss/1.0/\' xmlns:gContact=\'http://schemas.google.com/contact/2008\' xmlns:batch=\'http://schemas.google.com/gdata/batch\' xmlns:gd=\'http://schemas.google.com/g/2005\'><id>sforcedemos@gmail.com</id><updated>2008-06-09T21:39:09.406Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>Nick Tran\'s Contacts</title><link rel=\'alternate\' type=\'text/html\' href=\'http://www.google.com/\'/><link rel=\'http://schemas.google.com/g/2005#feed\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full\'/><link rel=\'http://schemas.google.com/g/2005#post\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full\'/><link rel=\'http://schemas.google.com/g/2005#batch\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/batch\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full?max-results=25\'/><author><name>Nick Tran</name><email>sforcedemos@gmail.com</email></author><generator version=\'1.0\' uri=\'http://www.google.com/m8/feeds\'>Contacts</generator><openSearch:totalResults>2</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><openSearch:itemsPerPage>25</openSearch:itemsPerPage><entry><id>http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/base/0</id><updated>2008-06-08T17:49:41.995Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>Nick Tran</title><link rel=\'http://schemas.google.com/contacts/2008/rel#edit-photo\' type=\'image/*\' href=\'http://www.google.com/m8/feeds/photos/media/sforcedemos%40gmail.com/0/1B2M2Y8AsgTpgAmY7PhCfg\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/0\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/0/1212947381995000\'/><gd:email rel=\'http://schemas.google.com/g/2005#other\' address=\'sforcedemos@gmail.com\' primary=\'true\'/></entry><entry><id>http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/base/6de402568a8ade83</id><updated>2008-06-08T17:51:17.450Z</updated><category scheme=\'http://schemas.google.com/g/2005#kind\' term=\'http://schemas.google.com/contact/2008#contact\'/><title type=\'text\'>Phil Deart</title><link rel=\'http://schemas.google.com/contacts/2008/rel#edit-photo\' type=\'image/*\' href=\'http://www.google.com/m8/feeds/photos/media/sforcedemos%40gmail.com/6de402568a8ade83/1B2M2Y8AsgTpgAmY7PhCfg\'/><link rel=\'self\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/6de402568a8ade83\'/><link rel=\'edit\' type=\'application/atom+xml\' href=\'http://www.google.com/m8/feeds/contacts/sforcedemos%40gmail.com/full/6de402568a8ade83/1212947477450000\'/><gd:email rel=\'http://schemas.google.com/g/2005#other\' address=\'info@def.org\' primary=\'true\'/><gd:phoneNumber rel=\'http://schemas.google.com/g/2005#mobile\'>555</gd:phoneNumber></entry></feed>';
    
-    public static  testmethod void t1() { 
+    @isTest static void t1() { 
         xmldom f = new xmldom(contactFeedResponse);
         GoogleData gd = new GoogleData( f);
         system.debug (gd.self); 
@@ -45,7 +45,7 @@ public class GoogleDataTest {
     // HttpRequest :System.HttpRequest[Endpoint=http://spreadsheets.google.com/feeds/spreadsheets/private/full?title=account, Method=GET]
     //<?xml version='1.0' encoding='UTF-8'?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'><id>http://spreadsheets.google.com/feeds/spreadsheets/private/full</id><updated>2008-06-09T22:00:50.117Z</updated><category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#spreadsheet'/><title type='text'>Available Spreadsheets - sforcedemos@gmail.com</title><link rel='alternate' type='text/html' href='http://docs.google.com'/><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/spreadsheets/private/full'/><link rel='self' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/spreadsheets/private/full?title=account&amp;tfe='/><openSearch:totalResults>1</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><entry><id>http://spreadsheets.google.com/feeds/spreadsheets/private/full/o12612000142644651407.6804866143906912412</id><updated>2008-06-08T02:18:19.389Z</updated><category scheme='http://schemas.google.com/spreadsheets/2006' term='http://schemas.google.com/spreadsheets/2006#spreadsheet'/><title type='text'>Account Summary</title><content type='text'>Account Summary</content><link rel='http://schemas.google.com/spreadsheets/2006#worksheetsfeed' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/worksheets/o12612000142644651407.6804866143906912412/private/full'/><link rel='alternate' type='text/html' href='http://spreadsheets.google.com/ccc?key=o12612000142644651407.6804866143906912412'/><link rel='self' type='application/atom+xml' href='http://spreadsheets.google.com/feeds/spreadsheets/private/full/o12612000142644651407.6804866143906912412'/><author><name>sforcedemos</name><email>sforcedemos@gmail.com</email></author></entry></feed>
     
-    public static  testmethod void testCells() { 
+    @isTest static void testCells() { 
         SpreadsheetService service = new SpreadsheetService();     
         string rng = 'A2:c2';
     
@@ -109,10 +109,10 @@ public class GoogleDataTest {
     
     
     // test GoogleService here as well...
-   public static  testmethod void testSrv1() { 
+   @isTest static void testSrv1() { 
       Map<String, Schema.SObjectField> ss = GoogleService.getFieldsMap('Account');
    }
-   public static  testmethod void testSrv2() { 
+   @isTest static void testSrv2() { 
         GoogleService g = new GoogleService('foo');
         g.AuthSubToken = 'foo'; 
         system.assert( g.AuthSubToken == 'foo');
@@ -125,10 +125,10 @@ public class GoogleDataTest {
         g.getFeedMethod(    'delete', 'fooo','body','application/atom+xml');
         
     }   
-    public static  testmethod void testSrv3() { 
+    @isTest static void testSrv3() { 
         system.assert( googleservice.getSobjectToken( 'Contact') != null); 
     }
-    public static  testmethod void auth() { 
+    @isTest static void auth() { 
         // how to make a more meaningful test, given that we can't callout in a test method
         AuthSubUtil.getTokenInfo('sess');
         GoogleData g = new GoogleData( new xmldom('<entry>fff</entry>') );
@@ -146,7 +146,7 @@ public class GoogleDataTest {
     '<gCal:uid value=\'h322i33tt385m1gnjpd4hns42s@google.com\'/><gCal:sequence value=\'0\'/>'+
     '<gd:when startTime=\'2008-07-22\' endTime=\'2008-07-25\'/><gd:who rel=\'http://schemas.google.com/g/2005#event.organizer\' valueString=\'Platform Mktg  Events Universe -- events of interest\' email=\'flcgs27odaadjvnv97q8ou2gi4@group.calendar.google.com\'/><gd:where valueString=\'\'/></entry></feed>';
     
-    public static  testmethod void cal() {
+    @isTest static void cal() {
         
         xmldom f = new xmldom(calTest);
         GoogleData calFeed = new GoogleData(    f);
@@ -173,7 +173,7 @@ public class GoogleDataTest {
     } 
     
     // other..
-    public static  testmethod void qry() {
+    @isTest static void qry() {
         googledata.query q = new googledata.query('fsdf');
         system.assert( q.feedUrl != null );
         system.assert( q.FullTextQuery == null ); 
